@@ -1,0 +1,15 @@
+12:31:09.572 [main] INFO  RegistrationFieldValidation - Error message and color are as intended for First Name field.
+12:31:09.595 [main] INFO  RegistrationFieldValidation - Error message and color are as intended for Last Name field.
+12:31:09.615 [main] INFO  RegistrationFieldValidation - Error message and color are as intended for Address field.
+12:31:09.634 [main] INFO  RegistrationFieldValidation - Error message and color are as intended for City field.
+12:31:09.654 [main] INFO  RegistrationFieldValidation - Error message and color are as intended for State field.
+12:31:09.675 [main] INFO  RegistrationFieldValidation - Error message and color are as intended for Zip Code field.
+12:31:09.694 [main] INFO  RegistrationFieldValidation - Error message and color are as intended for Social Security Number field.
+12:31:09.714 [main] INFO  RegistrationFieldValidation - Error message and color are as intended for Username field.
+12:31:09.734 [main] INFO  RegistrationFieldValidation - Error message and color are as intended for Password field.
+12:31:09.754 [main] INFO  RegistrationFieldValidation - Error message and color are as intended for Password confirm field.
+12:31:26.971 [main] INFO  OpenNewBankAccount - Found account with number: 13455 with expected balance.
+12:31:29.175 [main] INFO  OpenNewBankAccount - Correct balance of first account found: $49900.00
+12:31:29.189 [main] INFO  OpenNewBankAccount - Correct balance of second account found: $100.00
+12:31:31.480 [main] INFO  TransferFunds - Balance of first account is correct: $49900.00
+12:31:31.492 [main] INFO  TransferFunds - Balance of second account is correct: $100.00

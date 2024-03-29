@@ -1,0 +1,91 @@
+12:36:28.796 [main] INFO  RegistrationFieldValidation - Error message and color are as intended for First Name field.
+12:36:28.837 [main] INFO  RegistrationFieldValidation - Error message and color are as intended for Last Name field.
+12:36:28.874 [main] INFO  RegistrationFieldValidation - Error message and color are as intended for Address field.
+12:36:28.913 [main] INFO  RegistrationFieldValidation - Error message and color are as intended for City field.
+12:36:28.953 [main] INFO  RegistrationFieldValidation - Error message and color are as intended for State field.
+12:36:28.992 [main] INFO  RegistrationFieldValidation - Error message and color are as intended for Zip Code field.
+12:36:29.029 [main] INFO  RegistrationFieldValidation - Error message and color are as intended for Social Security Number field.
+12:36:29.072 [main] INFO  RegistrationFieldValidation - Error message and color are as intended for Username field.
+12:36:29.108 [main] INFO  RegistrationFieldValidation - Error message and color are as intended for Password field.
+12:36:29.148 [main] INFO  RegistrationFieldValidation - Error message and color are as intended for Password confirm field.
+12:36:35.980 [main] INFO  BaseTest - User login successful
+12:36:43.209 [main] INFO  OpenNewBankAccount - Found account with number: 13455 with expected balance.
+12:36:45.395 [main] INFO  OpenNewBankAccount - Correct balance of first account found: $49900.00
+12:36:45.408 [main] INFO  OpenNewBankAccount - Correct balance of second account found: $100.00
+12:37:02.511 [main] INFO  OpenNewBankAccount - Found account with number: 13677 with expected balance.
+12:37:04.694 [main] INFO  OpenNewBankAccount - Correct balance of first account found: $49900.00
+12:37:04.707 [main] INFO  OpenNewBankAccount - Correct balance of second account found: $100.00
+12:37:07.016 [main] INFO  TransferFunds - Balance of first account is correct: $49900.00
+12:37:07.029 [main] INFO  TransferFunds - Balance of second account is correct: $100.00
+12:37:09.999 [main] INFO  TransferFunds - $5000 has been transferred to second account!
+12:37:22.376 [main] INFO  RequestLoan - Account type: LOAN
+12:37:23.688 [main] INFO  RequestLoan - Account numbers are matching!
+12:37:24.498 [main] INFO  RequestLoan - First down payment $1500.00 has been paid. Main account balance is: $48500.00
+12:37:26.057 [main] INFO  RequestLoan - Loan account balance: $10000.00
+12:37:33.095 [main] INFO  OpenNewBankAccount - Found account with number: 14232 with expected balance.
+12:37:35.288 [main] INFO  OpenNewBankAccount - Correct balance of first account found: $49900.00
+12:37:35.301 [main] INFO  OpenNewBankAccount - Correct balance of second account found: $100.00
+12:37:45.275 [main] INFO  OpenNewBankAccount - Found account with number: 14565 with expected balance.
+12:37:47.474 [main] INFO  OpenNewBankAccount - Correct balance of first account found: $49900.00
+12:37:47.487 [main] INFO  OpenNewBankAccount - Correct balance of second account found: $100.00
+12:38:04.809 [main] INFO  RegistrationFieldValidation - Error message and color are as intended for First Name field.
+12:38:04.827 [main] INFO  RegistrationFieldValidation - Error message and color are as intended for Last Name field.
+12:38:04.845 [main] INFO  RegistrationFieldValidation - Error message and color are as intended for Address field.
+12:38:04.863 [main] INFO  RegistrationFieldValidation - Error message and color are as intended for City field.
+12:38:04.882 [main] INFO  RegistrationFieldValidation - Error message and color are as intended for State field.
+12:38:04.900 [main] INFO  RegistrationFieldValidation - Error message and color are as intended for Zip Code field.
+12:38:04.921 [main] INFO  RegistrationFieldValidation - Error message and color are as intended for Social Security Number field.
+12:38:04.938 [main] INFO  RegistrationFieldValidation - Error message and color are as intended for Username field.
+12:38:04.957 [main] INFO  RegistrationFieldValidation - Error message and color are as intended for Password field.
+12:38:04.976 [main] INFO  RegistrationFieldValidation - Error message and color are as intended for Password confirm field.
+12:38:10.228 [main] INFO  BaseTest - User login successful
+12:38:16.106 [main] INFO  OpenNewBankAccount - Found account with number: 13566 with expected balance.
+12:38:18.300 [main] INFO  OpenNewBankAccount - Correct balance of first account found: $49900.00
+12:38:18.312 [main] INFO  OpenNewBankAccount - Correct balance of second account found: $100.00
+12:38:24.714 [main] INFO  OpenNewBankAccount - Found account with number: 13788 with expected balance.
+12:38:26.894 [main] INFO  OpenNewBankAccount - Correct balance of first account found: $49900.00
+12:38:26.907 [main] INFO  OpenNewBankAccount - Correct balance of second account found: $100.00
+12:38:29.178 [main] INFO  TransferFunds - Balance of first account is correct: $49900.00
+12:38:29.190 [main] INFO  TransferFunds - Balance of second account is correct: $100.00
+12:38:32.132 [main] INFO  TransferFunds - $5000 has been transferred to second account!
+12:38:45.573 [main] INFO  RequestLoan - Account type: LOAN
+12:38:46.884 [main] INFO  RequestLoan - Account numbers are matching!
+12:38:47.721 [main] INFO  RequestLoan - First down payment $1500.00 has been paid. Main account balance is: $48500.00
+12:38:49.298 [main] INFO  RequestLoan - Loan account balance: $10000.00
+12:38:55.169 [main] INFO  OpenNewBankAccount - Found account with number: 14232 with expected balance.
+12:38:57.364 [main] INFO  OpenNewBankAccount - Correct balance of first account found: $49900.00
+12:38:57.376 [main] INFO  OpenNewBankAccount - Correct balance of second account found: $100.00
+12:39:07.746 [main] WARN  OpenNewBankAccount - Account with exepected balance not found!.
+12:39:08.267 [main] WARN  OpenNewBankAccount - Account with exepected balance not found!.
+12:39:08.782 [main] WARN  OpenNewBankAccount - Account with exepected balance not found!.
+12:39:10.965 [main] WARN  OpenNewBankAccount - Error: Incorrect balance of first account: $415.50
+12:39:10.977 [main] INFO  OpenNewBankAccount - Correct balance of second account found: $100.00
+12:39:28.201 [main] INFO  RegistrationFieldValidation - Error message and color are as intended for First Name field.
+12:39:28.220 [main] INFO  RegistrationFieldValidation - Error message and color are as intended for Last Name field.
+12:39:28.238 [main] INFO  RegistrationFieldValidation - Error message and color are as intended for Address field.
+12:39:28.256 [main] INFO  RegistrationFieldValidation - Error message and color are as intended for City field.
+12:39:28.273 [main] INFO  RegistrationFieldValidation - Error message and color are as intended for State field.
+12:39:28.290 [main] INFO  RegistrationFieldValidation - Error message and color are as intended for Zip Code field.
+12:39:28.308 [main] INFO  RegistrationFieldValidation - Error message and color are as intended for Social Security Number field.
+12:39:28.326 [main] INFO  RegistrationFieldValidation - Error message and color are as intended for Username field.
+12:39:28.344 [main] INFO  RegistrationFieldValidation - Error message and color are as intended for Password field.
+12:39:28.361 [main] INFO  RegistrationFieldValidation - Error message and color are as intended for Password confirm field.
+12:39:35.360 [main] INFO  BaseTest - User login successful
+12:39:42.616 [main] INFO  OpenNewBankAccount - Found account with number: 13566 with expected balance.
+12:39:44.814 [main] INFO  OpenNewBankAccount - Correct balance of first account found: $49900.00
+12:39:44.827 [main] INFO  OpenNewBankAccount - Correct balance of second account found: $100.00
+12:39:51.903 [main] INFO  OpenNewBankAccount - Found account with number: 13788 with expected balance.
+12:39:54.087 [main] INFO  OpenNewBankAccount - Correct balance of first account found: $49900.00
+12:39:54.099 [main] INFO  OpenNewBankAccount - Correct balance of second account found: $100.00
+12:39:56.371 [main] INFO  TransferFunds - Balance of first account is correct: $49900.00
+12:39:56.382 [main] INFO  TransferFunds - Balance of second account is correct: $100.00
+12:39:59.327 [main] INFO  TransferFunds - $5000 has been transferred to second account!
+12:40:11.414 [main] INFO  RequestLoan - Account type: LOAN
+12:40:12.727 [main] INFO  RequestLoan - Account numbers are matching!
+12:40:13.524 [main] INFO  RequestLoan - First down payment $1500.00 has been paid. Main account balance is: $48500.00
+12:40:15.092 [main] INFO  RequestLoan - Loan account balance: $10000.00
+12:40:25.042 [main] INFO  OpenNewBankAccount - Found account with number: 14232 with expected balance.
+12:40:27.205 [main] WARN  OpenNewBankAccount - Error: Incorrect balance of first account: 
+12:40:33.387 [main] INFO  OpenNewBankAccount - Found account with number: 14454 with expected balance.
+12:40:35.583 [main] INFO  OpenNewBankAccount - Correct balance of first account found: $49900.00
+12:40:35.595 [main] INFO  OpenNewBankAccount - Correct balance of second account found: $100.00
