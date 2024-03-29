@@ -4,9 +4,9 @@ pipeline {
         stage('isRemote') {
             steps {
                 script {
-                    config = readFile "src/test/java/config/configuration.properties"
+                    config = readFile "src/main/java/config/configuration.properties"
                     newConfig = config.replaceAll("isRemote=.*","isRemote=${isRemote}")
-                    writeFile file: "src/test/java/config/configuration.properties", text: "${newConfig}"
+                    writeFile file: "src/main/java/config/configuration.properties", text: "${newConfig}"
                 }
             }
         }
