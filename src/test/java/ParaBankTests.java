@@ -90,13 +90,6 @@ public class ParaBankTests extends BaseTest {
 }
 
 
-//zrobić automatycznie żeby się docker/jenkins odpalał isRemote = true
-//stworzyć testng.xml file żeby odpalać run automatycznie(?)
-//porozdzielać na foldery lepiej i powkładać odpowiednie rzeczy w odpowiednie miejsca
-//dodać driver do configu? co z log4j2.xml?
-//jak odpalać automatycznie selenium grid server??
-
-
 //dodać klase TestSuite/testRun jako enkapsulacje klasy ParaBankTests?
 //zmienić Thread sleep na wait > to nie wiem OCB nie moge zrobić
 
