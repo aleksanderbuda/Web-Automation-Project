@@ -14,6 +14,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.time.Duration;
 import java.util.Properties;
 
 public class Drivers {
@@ -71,6 +72,7 @@ public class Drivers {
                 }
             }
         }
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 //        driver.manage().window().maximize();
         return driver;
     }
