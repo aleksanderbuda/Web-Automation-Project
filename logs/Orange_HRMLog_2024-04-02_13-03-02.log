@@ -1,0 +1,2 @@
+13:03:03.103 [main] INFO  BaseTest - Starting Selenium Grid on Docker container
+13:03:18.453 [main] INFO  BaseTest - Stopping Selenium Grid on Docker container

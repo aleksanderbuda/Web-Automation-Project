@@ -9,8 +9,6 @@ services:
       - SE_EVENT_BUS_HOST=selenium-hub
       - SE_EVENT_BUS_PUBLISH_PORT=4442
       - SE_EVENT_BUS_SUBSCRIBE_PORT=4443
-    volumes:
-      - ./config.yml:/app/config.yml
 
   edge:
     image: selenium/node-edge:4.19.0-20240328
@@ -21,8 +19,6 @@ services:
       - SE_EVENT_BUS_HOST=selenium-hub
       - SE_EVENT_BUS_PUBLISH_PORT=4442
       - SE_EVENT_BUS_SUBSCRIBE_PORT=4443
-    volumes:
-      - ./config.yml:/app/config.yml
 
   firefox:
     image: selenium/node-firefox:4.19.0-20240328
@@ -33,8 +29,6 @@ services:
       - SE_EVENT_BUS_HOST=selenium-hub
       - SE_EVENT_BUS_PUBLISH_PORT=4442
       - SE_EVENT_BUS_SUBSCRIBE_PORT=4443
-    volumes:
-      - ./config.yml:/app/config.yml
 
   selenium-hub:
     image: selenium/hub:4.10.0-20230607
