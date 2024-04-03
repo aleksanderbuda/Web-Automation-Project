@@ -11,14 +11,16 @@ pipeline {
             }
         }
         stage('Run Tests') {
-            steps {
-                script {
-                    try {
-                        timeout(time: 3, unit: 'MINUTES') {
-                            bat script: 'mvn clean test'
+            node('Built-In Node') {
+                steps {
+                    script {
+                        try {
+                            timeout(time: 3, unit: 'MINUTES') {
+                                bat 'mvn clean test -X'
+                            }
+                        } catch (err) {
+                            echo "Test stage timed out, but the pipeline will continue."
                         }
-                    } catch (err) {
-                        echo "Test stage timed out, but the pipeline will continue."
                     }
                 }
             }
