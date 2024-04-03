@@ -5,11 +5,11 @@ import org.testng.annotations.Test;
 
 public class ParaBankTests extends BaseTest {
 
-    @BeforeSuite
-    public void setBrowserType() {
-        Drivers.browserType = "chrome";
-        browserType = Drivers.browserType;
-    }
+//    @BeforeSuite
+//    public void setBrowserType() {
+//        Drivers.browserType = "chrome";
+//        browserType = Drivers.browserType;
+//    }
     @Test(priority = 1)
     public void registrationFieldValidationTest() throws InterruptedException {
         RegistrationFieldValidation registrationFieldValidation = new RegistrationFieldValidation(driver);

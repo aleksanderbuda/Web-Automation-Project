@@ -18,27 +18,34 @@ public class BaseTest {
     protected static Logger log = LogManager.getLogger();
     protected static String browserType;
 
-//    @BeforeSuite
-//    public void startDocker() throws IOException, InterruptedException {
-//        ConfigLoader configLoader = new ConfigLoader("src/main/java/config/configuration.properties");
-//        boolean isRemote = configLoader.isRemote();
-//        if (isRemote) {
-//            log.info("Starting Selenium Grid on Docker container");
-//            DockerSetup.startDockerGrid();
-//        }
-//    }
-
+    @BeforeSuite
+    public void startDocker() throws IOException, InterruptedException {
+        ConfigLoader configLoader = new ConfigLoader("src/main/java/config/configuration.properties");
+        boolean isRemote = configLoader.isRemote();
+        if (isRemote) {
+            log.info("Starting Selenium Grid on Docker container");
+            DockerSetup.startDockerGrid();
+//            driver = Drivers.getDriver(browserType);
+        }
+    }
+    @Parameters("browserType")
     @BeforeClass
-    public void adminPageSettings() throws InterruptedException, MalformedURLException {
-        this.driver = Drivers.getDriver(browserType);
+    public void adminPageSettings(String browserType) throws InterruptedException, MalformedURLException {
+        if (browserType == null) {
+            browserType = "chrome";
+        }
+        driver = Drivers.getDriver(browserType);
         AdminPage adminPage = new AdminPage(driver);
         adminPage.adminSettingsSetUp();
         closeBrowser();
     }
-
+    @Parameters("browserType")
     @BeforeMethod
-    public void setup() throws MalformedURLException {
-        this.driver = Drivers.getDriver(browserType);
+    public void setup(String browserType) throws MalformedURLException {
+        if (browserType == null) {
+            browserType = "chrome";
+        }
+        driver = Drivers.getDriver(browserType);
     }
 
     @AfterMethod
@@ -53,15 +60,15 @@ public class BaseTest {
         }
     }
 
-//    @AfterSuite
-//    public void stopDocker() throws IOException, InterruptedException {
-//        ConfigLoader configLoader = new ConfigLoader("src/main/java/config/configuration.properties");
-//        boolean isRemote = configLoader.isRemote();
-//        if (isRemote) {
-//            log.info("Stopping Selenium Grid on Docker container");
-//            DockerSetup.stopDockerGrid();
-//        }
-//    }
+    @AfterSuite
+    public void stopDocker() throws IOException, InterruptedException {
+        ConfigLoader configLoader = new ConfigLoader("src/main/java/config/configuration.properties");
+        boolean isRemote = configLoader.isRemote();
+        if (isRemote) {
+            log.info("Stopping Selenium Grid on Docker container");
+            DockerSetup.stopDockerGrid();
+        }
+    }
     public void failedTest(String testMethodName, String screenshotDirectory, WebDriver driver) {
         File screenshotFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
         try {
