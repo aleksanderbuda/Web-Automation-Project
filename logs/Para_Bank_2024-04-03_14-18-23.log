@@ -1,0 +1,3 @@
+14:18:36.093 [main] INFO  OpenNewBankAccount - Found account with number: 13455 with expected balance.
+14:18:38.293 [main] INFO  OpenNewBankAccount - Correct balance of first account found: $49900.00
+14:18:38.306 [main] INFO  OpenNewBankAccount - Correct balance of second account found: $100.00

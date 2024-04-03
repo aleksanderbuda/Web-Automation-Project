@@ -10,7 +10,7 @@
             <PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
         </Console>
 
-        <File name="File" fileName="${basePath}/Orange_HRMLog_${date:yyyy-MM-dd_HH-mm-ss}.log">
+        <File name="File" fileName="${basePath}/Para_Bank_${date:yyyy-MM-dd_HH-mm-ss}.log">
             <PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
         </File>
 

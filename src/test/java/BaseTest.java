@@ -30,7 +30,7 @@ public class BaseTest {
     }
     @Parameters("browserType")
     @BeforeClass
-    public void adminPageSettings(String browserType) throws InterruptedException, MalformedURLException {
+    public void adminPageSettings(@Optional("chrome") String browserType) throws InterruptedException, MalformedURLException {
         if (browserType == null) {
             browserType = "chrome";
         }
@@ -41,7 +41,7 @@ public class BaseTest {
     }
     @Parameters("browserType")
     @BeforeMethod
-    public void setup(String browserType) throws MalformedURLException {
+    public void setup(@Optional("chrome") String browserType) throws MalformedURLException {
         if (browserType == null) {
             browserType = "chrome";
         }
