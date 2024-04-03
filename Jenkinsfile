@@ -15,7 +15,7 @@ pipeline {
                 script {
                     try {
                         timeout(time: 3, unit: 'MINUTES') {
-                            bat 'cmd /c mvn clean test -X'
+                            bat script: 'mvn clean test'
                         }
                     } catch (err) {
                         echo "Test stage timed out, but the pipeline will continue."
