@@ -1,7 +1,5 @@
 ## 📌 Selenium Test Automation Project for ParaBank 
 
-____
-
 This project showcases a comprehensive Selenium-based test automation framework tailored specifically for the ParaBank website created by parasoft. To maximize maintainability and scalability, it effectively utilizes the Page Object Model (POM) design pattern.
 
 ### Key Features:
