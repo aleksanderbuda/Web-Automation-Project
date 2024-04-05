@@ -73,7 +73,7 @@ ____
 
 #### Run Your Pipeline
 
-* **Build with Parameters**: Click "Build with Parameters" and set the isRemote parameter accordingly:
+* **Build with Parameters**: Click "Build with Parameters" and set the `isRemote` parameter accordingly:
   * `true`: Enables remote execution with Docker (ensure Docker Desktop is running)
   * `false`: Enables local execution
 * **Allure Reports**: After the pipeline completes, access the Allure Report as a build artifact (ensure the Allure plugin is installed in Jenkins).
