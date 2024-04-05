@@ -1,8 +1,6 @@
-## 📌 Selenium Test Automation Project for ParaBank 
+## 📌 Selenium Test Automation Project for ParaBank
 
-____
-
-This project showcases a comprehensive Selenium-based test automation framework tailored specifically for the ParaBank website created by parasoft. To maximize maintainability and scalability, it effectively utilizes the Page Object Model (POM) design pattern.
+This project showcases a comprehensive Selenium-based test automation framework tailored specifically for the ParaBank website created by Parasoft. To maximize maintainability and scalability, it effectively utilizes the Page Object Model (POM) design pattern.
 
 ### Key Features:
 * **Powerful Web Testing**: Employs _Selenium WebDriver_ to ensure comprehensive interaction and testing of parabank website elements.
@@ -36,11 +34,11 @@ ____
 1. **Launch your IDE**: Open your preferred Java IDE (IntelliJ IDEA or Eclipse are recommended).
 2. **Import Project**: Import the project as a Maven project. Do this by selecting the project's root directory within your IDE.
 3. **Configure for Remote Execution** (**Optional**):
-   * Open the src/main/java/config/configuration.properties file.
-   * Set the `isRemote` value:
-     * 
-         `true`: Enables remote execution using Docker and Selenium Grid for cross-browser testing (ensure Docker Desktop is running).
-     * `false`: Enables local test execution.
+    * Open the src/main/java/config/configuration.properties file.
+    * Set the `isRemote` value:
+        *
+            * `true`: Enables remote execution using Docker and Selenium Grid for cross-browser testing (ensure Docker Desktop is running).
+        * `false`: Enables local test execution.
 4. **Run Tests:** Choose one of the following methods:
 * **Right-click**: Right-click on a specific test class or individual test case(s) and select "Run".
 * **testng.xml:** Execute the `testng.xml` file.
@@ -65,7 +63,7 @@ ____
    **Default value:** `false`
 
 4. **Pipeline Configuration**: In the "Pipeline" section:
-   
+
           Definition: Select "Pipeline script from SCM"
           SCM: Choose "Git"
           Repository URL: Set to https://github.com/Catanci/Para_Bank_Framework.git
@@ -75,9 +73,9 @@ ____
 
 #### Run Your Pipeline
 
-* **Build with Parameters**: Click "Build with Parameters" and set the isRemote parameter accordingly:
-  * `true`: Enables remote execution with Docker (ensure Docker Desktop is running)
-  * `false`: Enables local execution
+* **Build with Parameters**: Click "Build with Parameters" and set the `isRemote` parameter accordingly:
+    * `true`: Enables remote execution with Docker (ensure Docker Desktop is running)
+    * `false`: Enables local execution
 * **Allure Reports**: After the pipeline completes, access the Allure Report as a build artifact (ensure the Allure plugin is installed in Jenkins).
 
 Happy Testing! 😊
