@@ -37,7 +37,7 @@ ____
    * Open the src/main/java/config/configuration.properties file.
    * Set the `isRemote` value:
      * 
-         `true`: Enables remote execution using Docker and Selenium Grid for cross-browser testing (ensure Docker Desktop is running).
+        * `true`: Enables remote execution using Docker and Selenium Grid for cross-browser testing (ensure Docker Desktop is running).
      * `false`: Enables local test execution.
 4. **Run Tests:** Choose one of the following methods:
 * **Right-click**: Right-click on a specific test class or individual test case(s) and select "Run".
