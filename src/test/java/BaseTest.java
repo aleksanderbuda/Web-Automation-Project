@@ -19,7 +19,6 @@ import java.net.MalformedURLException;
 public class BaseTest {
     WebDriver driver;
     protected static Logger log = Log.log;
-    protected static String browserType;
     private boolean isRemote;
 
     @BeforeSuite

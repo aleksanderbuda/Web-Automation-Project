@@ -14,7 +14,7 @@ pipeline {
             steps {
                 script {
                     try {
-                        timeout(time: 10, unit: 'MINUTES') {
+                        timeout(time: 8, unit: 'MINUTES') {
                             bat script: 'mvn clean test'
                         }
                     } catch (err) {
@@ -32,7 +32,7 @@ pipeline {
                     reportBuildPolicy: 'ALWAYS',
                     results: [[path: 'target/allure-results']]
                 ])
-                archiveArtifacts artifacts: 'target/allure-report/**/*', allowEmptyArchive: true
+                archiveArtifacts artifacts: 'target/allure-report/**', allowEmptyArchive: true
                 cleanWs()
             }
         }
