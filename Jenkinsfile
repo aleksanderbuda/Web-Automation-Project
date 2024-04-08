@@ -32,7 +32,7 @@ pipeline {
                     reportBuildPolicy: 'ALWAYS',
                     results: [[path: 'target/allure-results']]
                 ])
-                archiveArtifacts artifacts: 'target/allure-report/**', allowEmptyArchive: true
+                archiveArtifacts artifacts: 'allure-report/**', allowEmptyArchive: true
                 cleanWs()
             }
         }
