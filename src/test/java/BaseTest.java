@@ -1,33 +1,37 @@
 import config.ConfigLoader;
 import config.DockerSetup;
 import config.Drivers;
+import config.Log;
+
 import org.apache.commons.io.FileUtils;
-import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
+import org.testng.ITestResult;
 import org.testng.annotations.*;
+
 import java.io.File;
 import java.io.IOException;
 import java.net.MalformedURLException;
 
-@Listeners(ScreenshotTaker.class)
+
 public class BaseTest {
     WebDriver driver;
-    protected static Logger log = LogManager.getLogger();
+    protected static Logger log = Log.log;
     protected static String browserType;
+    private boolean isRemote;
 
     @BeforeSuite
     public void startDocker() throws IOException, InterruptedException {
         ConfigLoader configLoader = new ConfigLoader("src/main/java/config/configuration.properties");
-        boolean isRemote = configLoader.isRemote();
+        isRemote = configLoader.isRemote();
         if (isRemote) {
             log.info("Starting Selenium Grid on Docker container");
             DockerSetup.startDockerGrid();
-//            driver = Drivers.getDriver(browserType);
         }
     }
+
     @Parameters("browserType")
     @BeforeClass
     public void adminPageSettings(@Optional("chrome") String browserType) throws InterruptedException, MalformedURLException {
@@ -35,10 +39,11 @@ public class BaseTest {
             browserType = "chrome";
         }
         driver = Drivers.getDriver(browserType);
-        AdminPage adminPage = new AdminPage(driver);
-        adminPage.adminSettingsSetUp();
+        AdminPageInitializer adminPage = new AdminPageInitializer(driver);
+        adminPage.AdminPanelSetupManager();
         closeBrowser();
     }
+
     @Parameters("browserType")
     @BeforeMethod
     public void setup(@Optional("chrome") String browserType) throws MalformedURLException {
@@ -49,8 +54,21 @@ public class BaseTest {
     }
 
     @AfterMethod
-    public void teardown() {
+    public void teardown(ITestResult result) {
+        WebpageScreenshotUtil screenshotUtil = new WebpageScreenshotUtil(driver);
+        screenshotUtil.onTestFailure(result);
         driver.quit();
+        Log.info("Driver quit successfully\n");
+    }
+
+    private String getScreenshotDirectory() {
+        if (isRemote) {
+            String jenkinsJobName = System.getenv("JOB_NAME");
+            String jenkinsBuildNumber = System.getenv("BUILD_NUMBER");
+            return String.format("jobs/%s/builds/%s/screenshots", jenkinsJobName, jenkinsBuildNumber);
+        } else {
+            return "local-screenshots";
+        }
     }
 
     @AfterClass
@@ -63,24 +81,25 @@ public class BaseTest {
     @AfterSuite
     public void stopDocker() throws IOException, InterruptedException {
         ConfigLoader configLoader = new ConfigLoader("src/main/java/config/configuration.properties");
-        boolean isRemote = configLoader.isRemote();
+        isRemote = configLoader.isRemote();
         if (isRemote) {
             log.info("Stopping Selenium Grid on Docker container");
             DockerSetup.stopDockerGrid();
         }
     }
+
     public void failedTest(String testMethodName, String screenshotDirectory, WebDriver driver) {
         File screenshotFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
         try {
-            String screenshotPath = screenshotDirectory + "\\" + testMethodName + "_" + System.currentTimeMillis() + ".png";
+            String screenshotPath = screenshotDirectory + File.separator + testMethodName + "_" + System.currentTimeMillis() + ".png";
             FileUtils.copyFile(screenshotFile, new File(screenshotPath));
         } catch (IOException e) {
             log.error("Error saving screenshot: " + e.getMessage());
 
         }
     }
+
+    public String getCurrentTestName(ITestResult result) {
+        return result.getMethod().getMethodName();
+    }
 }
-
-
-
-

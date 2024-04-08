@@ -8,9 +8,9 @@ import org.openqa.selenium.support.ui.Select;
 import java.time.Duration;
 import java.util.List;
 
-public class RequestLoan {
+public class LoanRequestService {
 
-    RequestLoan(WebDriver driver) {
+    LoanRequestService(WebDriver driver) {
         this.driver = driver;
     }
     static WebDriver driver;
@@ -27,7 +27,7 @@ public class RequestLoan {
     private final By logOutBtn = By.linkText("Log Out");
 
 
-    void userRequestsLoan() throws InterruptedException {
+    void processLoanRequest() throws InterruptedException {
 
         driver.findElement(goToAccountsOverview).click();
         List<WebElement> ngBindingLinks = driver.findElements(By.className("ng-binding"));

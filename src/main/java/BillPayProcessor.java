@@ -1,18 +1,16 @@
+import config.FakeDataGenerator;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
-import java.time.Duration;
 
 
-public class BillPayment {
+public class BillPayProcessor {
 
-    public WebDriver driver;
-    BillPayment(WebDriver driver) {
+    BillPayProcessor(WebDriver driver) {
         this.driver = driver;
     }
+    public WebDriver driver;
     private By gotoBillPay = By.linkText("Bill Pay");
     private By payeeNameField = By.cssSelector("input[ng-model='payee.name']");
     private By addressField = By.cssSelector("input[ng-model='payee.address.street']");
@@ -30,8 +28,8 @@ public class BillPayment {
     public String fromAccountId;
 
 
-    void userPayBills() throws InterruptedException {
-        getFaker faker = new getFaker();
+    void processBillPayment() throws InterruptedException {
+        FakeDataGenerator faker = new FakeDataGenerator();
         driver.findElement(gotoBillPay).click();
         driver.findElement(payeeNameField).sendKeys(faker.generateFirstName());
         driver.findElement(addressField).sendKeys(faker.generateAddress());

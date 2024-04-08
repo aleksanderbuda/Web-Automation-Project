@@ -3,9 +3,9 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 
-public class AdminPage {
+public class AdminPageInitializer {
 
-    AdminPage(WebDriver driver) {
+    AdminPageInitializer(WebDriver driver) {
         this.driver = driver;
     }
     public WebDriver driver;
@@ -18,7 +18,7 @@ public class AdminPage {
     private By minBalance = By.id("minimumBalance");
     private By adminPageSubmitBtn = By.cssSelector("input.button[value='Submit']");
 
-    public void adminSettingsSetUp() throws InterruptedException {
+    public void AdminPanelSetupManager() throws InterruptedException {
         driver.get(goToAdminPage);
         driver.findElement(databaseCleanBtn).click();
         Thread.sleep(500);

@@ -1,11 +1,18 @@
+import config.FakeDataGenerator;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
+import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 
-public class ParaBankHomePageRegistration {
+public class HomePageUserRegistration {
 
-    ParaBankHomePageRegistration(WebDriver driver) {
+    HomePageUserRegistration(WebDriver driver) {
         this.driver = driver;
     }
+    FakeDataGenerator faker = new FakeDataGenerator();
+    protected static Logger log = LogManager.getLogger();
     private final WebDriver driver;
     public static String gotoWebPageAddress = "https://parabank.parasoft.com";
     private String gotoRegisterPage = "https://parabank.parasoft.com/parabank/register.htm";
@@ -25,8 +32,7 @@ public class ParaBankHomePageRegistration {
     private By userLogsOff = By.linkText("Log Out");
 
 
-   public void registerUser() {
-        getFaker faker = new getFaker();
+   public void registerNewUser() throws InterruptedException {
        driver.get(gotoWebPageAddress);
        driver.get(gotoRegisterPage);
 
@@ -42,14 +48,18 @@ public class ParaBankHomePageRegistration {
        driver.findElement(registerPasswordId).sendKeys(faker.generatePasswordField());
        driver.findElement(confirmPasswordId).sendKeys(faker.storeThePassword);
        driver.findElement(registersubmitBtn).click();
+       Thread.sleep(500);
        isUserRegistered();
        driver.findElement(userLogsOff).click();
 
-       getFaker.getThePasswordAndUsername();
+       FakeDataGenerator.getThePasswordAndUsername();
    }
-   boolean isUserRegistered() {
-       if (isUserRegisteredText != null) {
-       return true;
-       } else return registerFirstNameId == null;
-   }
+    void isUserRegistered() {
+        try {
+            WebElement successMessageElement = driver.findElement(isUserRegisteredText);
+            successMessageElement.isDisplayed();
+        } catch (NoSuchElementException e) {
+            log.error("Registration failed: Success message not found");
+        }
+    }
 }

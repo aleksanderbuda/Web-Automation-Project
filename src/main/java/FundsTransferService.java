@@ -8,9 +8,9 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import java.time.Duration;
 
-public class TransferFunds {
+public class FundsTransferService {
 
-    TransferFunds(WebDriver driver) {
+    FundsTransferService(WebDriver driver) {
         this.driver = driver;
     }
     public WebDriver driver;
@@ -32,7 +32,7 @@ public class TransferFunds {
             return null;
         }
     }
-    void userTransfersTheFunds() throws InterruptedException {
+    void transferFunds() throws InterruptedException {
         wait = new WebDriverWait(driver, Duration.ofMillis(3000));
         driver.findElement(goToAccountsOverview).click();
         Thread.sleep(1000);

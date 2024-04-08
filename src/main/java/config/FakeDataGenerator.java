@@ -1,9 +1,11 @@
+package config;
+
 import com.github.javafaker.Faker;
 
-public class getFaker {
+public class FakeDataGenerator {
     private static final Faker faker = new Faker();
-    static String storeThePassword = "";
-    static String storeTheUsername = "";
+    public static String storeThePassword = "";
+    public static String storeTheUsername = "";
 
     public String generateFirstName() {
             return faker.name().firstName();
@@ -36,9 +38,8 @@ public class getFaker {
         return this.storeThePassword = faker.internet().password();
     }
 
-    static void getThePasswordAndUsername() {
+    public static void getThePasswordAndUsername() {
         System.out.println(storeTheUsername);
         System.out.println(storeThePassword);
     }
-
 }

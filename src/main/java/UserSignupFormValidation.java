@@ -4,17 +4,18 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
-public class RegistrationFieldValidation {
-    public WebDriver driver;
-    RegistrationFieldValidation(WebDriver driver) {
+public class UserSignupFormValidation {
+
+    UserSignupFormValidation(WebDriver driver) {
         this.driver = driver;
     }
+    public WebDriver driver;
 
     protected static Logger log = LogManager.getLogger();
     private String gotoRegisterPage = "https://parabank.parasoft.com/parabank/register.htm";
     private final By registerSubmitBtn = By.xpath("//input[@value='Register']");
 
-    public void checkRegistrationErrorFields() throws InterruptedException {
+    public void validateSignupForm() throws InterruptedException {
         driver.get(gotoRegisterPage);
         driver.findElement(registerSubmitBtn).click();
         Thread.sleep(1000);

@@ -5,12 +5,12 @@ import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 
 
-public class FindTransaction {
+public class TransactionFinder {
 
-    public WebDriver driver;
-    FindTransaction(WebDriver driver) {
+    TransactionFinder(WebDriver driver) {
         this.driver = driver;
     }
+    public WebDriver driver;
 
     private final By gotoFindTransactions = By.linkText("Find Transactions");
     private final By firstAccountNumber = By.xpath("//*[@id=\"accountTable\"]/tbody/tr[1]/td[1]/a");
@@ -29,9 +29,7 @@ public class FindTransaction {
     public String foundTransactionDate;
     public String foundTransactionAmount;
 
-
-
-    void userFindsTransaction() throws InterruptedException {
+    void findTransaction() throws InterruptedException {
         Thread.sleep(1000);
         driver.findElement(firstAccountNumber).click();
         Thread.sleep(1000);
@@ -64,7 +62,9 @@ public class FindTransaction {
         driver.findElement(findByDateField).sendKeys(formattedDate);
         driver.findElement(findByDateBtn).click();
         Thread.sleep(500);
-        WebElement foundTransactionDateElement = driver.findElement(By.xpath("//*[@id=\"transactionTable\"]/tbody/tr/td[1]"));
+        driver.findElement(gotoTransaction).click();
+        WebElement foundTransactionDateElement = driver.findElement(By.xpath("//*[@id=\"rightPanel\"]/table/tbody/tr[2]/td[2]"));
+//        WebElement foundTransactionDateElement = driver.findElement(By.xpath("//*[@id=\"transactionTable\"]/tbody/tr/td[1]"));
         foundTransactionDate = foundTransactionDateElement.getText();
 
         driver.findElement(gotoFindTransactions).click();
@@ -80,3 +80,4 @@ public class FindTransaction {
         driver.findElement(logOutBtn).click();
     }
 }
+//*[@id="transactionTable"]/tbody/tr/td[1]
