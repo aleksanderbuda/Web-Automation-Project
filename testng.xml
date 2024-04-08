@@ -1,5 +1,9 @@
 <suite name="ParaBank Testing Suite">
 
+    <listeners>
+        <listener class-name="io.qameta.allure.testng.AllureTestNg"/>
+    </listeners>
+
     <test name="ChromeTests">
         <parameter name="browserType" value="chrome" />
         <classes>
