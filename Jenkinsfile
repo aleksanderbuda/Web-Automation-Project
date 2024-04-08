@@ -25,18 +25,15 @@ pipeline {
         }
         stage('Generate Allure Report') {
             steps {
-                script {
-                    allure([
-                        includeProperties: false,
-                        jdk: '',
-                        properties: [],
-                        reportBuildPolicy: 'ALWAYS',
-                        results: [[path: 'target/allure-results']]
-                    ])
-                }
-                script {
-                    cleanWs()
-                }
+                allure([
+                    includeProperties: false,
+                    jdk: '',
+                    properties: [],
+                    reportBuildPolicy: 'ALWAYS',
+                    results: [[path: 'target/allure-results']]
+                ])
+                archiveArtifacts artifacts: 'target/allure-report/**/*', allowEmptyArchive: true
+                cleanWs()
             }
         }
     }

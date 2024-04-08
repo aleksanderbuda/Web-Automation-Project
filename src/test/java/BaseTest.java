@@ -91,11 +91,17 @@ public class BaseTest {
     public void failedTest(String testMethodName, String screenshotDirectory, WebDriver driver) {
         File screenshotFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
         try {
-            String screenshotPath = screenshotDirectory + File.separator + testMethodName + "_" + System.currentTimeMillis() + ".png";
-            FileUtils.copyFile(screenshotFile, new File(screenshotPath));
+            if (isRemote) {
+                String screenshotPath = screenshotDirectory + File.separator + testMethodName + "_" + System.currentTimeMillis() + ".png";
+                FileUtils.copyFile(screenshotFile, new File(screenshotPath));
+                log.info("Screenshot saved remotely at: " + screenshotPath);
+            } else {
+                String localScreenshotPath = screenshotDirectory + File.separator + testMethodName + "_" + System.currentTimeMillis() + ".png";
+                FileUtils.copyFile(screenshotFile, new File(localScreenshotPath));
+                log.info("Screenshot saved locally at: " + localScreenshotPath);
+            }
         } catch (IOException e) {
             log.error("Error saving screenshot: " + e.getMessage());
-
         }
     }
 
