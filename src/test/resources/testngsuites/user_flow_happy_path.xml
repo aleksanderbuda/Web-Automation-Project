@@ -1,0 +1,70 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="User flow happy path" skipfailedinvocationcounts="false" junit="false" parallel="methods"
+       thread-count="5" data-provider-thread-count="5" annotations="JDK">
+
+    <test name="Admin Page">
+        <classes>
+            <class name="para.bank.AdminPageTest">
+                <methods>
+                    <include name="userSetsUpAdminPage"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Landing Page">
+        <classes>
+            <class name="para.bank.LandingPageTest">
+                <methods>
+                    <include name="verifyUserIsAbleToLogInWithValidAccount"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Create account Page">
+        <classes>
+            <class name="para.bank.CreateAccountPageTest">
+                <methods>
+                    <include name="verifyRedirectToCreateAccountPageFromLanding"/>
+                    <include name="verifyUserRegisterAccount"/>
+                    <include name="verifyRegistrationFieldsAreRequired"/>
+                    <include name="verifyWhitespaceTrimmingForFirstName"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Open Bank Account Page">
+        <classes>
+            <class name="para.bank.OpenNewAccountPageTest">
+                <methods>
+                    <include name="verifyUserCanOpenCheckingAccount"/>
+                    <include name="verifyUserCanOpenSavingsAccount"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Request Loan Page">
+        <classes>
+            <class name="para.bank.RequestLoanPageTest">
+                <methods>
+                    <include name="verifyUserPaysLoanLessThanDownPaymentAllows"/>
+                    <include name="verifyUserPaysMoreDownPaymentThanBalance"/>
+                    <include name="verifyUserTakesALoan"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Bill Pay Page">
+        <classes>
+            <class name="para.bank.BillPayPageTest">
+                <methods>
+                    <include name="verifyUserIsAbleToPayBills"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

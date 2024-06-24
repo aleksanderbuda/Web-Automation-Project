@@ -1,0 +1,23 @@
+[2024-06-24 08:01:50] [1] [INFO] 
+============= Basic configuration =============
+env=PROD
+=========== WebDriver configuration ===========
+browser=Chrome
+selenium_url=http://localhost:4444/wd/hub
+explicit_timeout=40
+auto_download=true
+locale=en_GB
+-------------- Driver capabilities ------------
+===============================================
+
+[2024-06-24 08:01:50] [1] [WARN] Reporting disabled: using no op test run registrar
+[2024-06-24 08:01:51] [1] [INFO] [TestNG] Running:
+  C:\Users\budaa\AppData\Local\JetBrains\IdeaIC2023.3\temp-testng-customsuite.xml
+
+[2024-06-24 08:01:51] [1] [INFO] Set thread-count=1
+[2024-06-24 08:01:51] [1] [INFO] Set data-provider-thread-count=1
+[2024-06-24 08:01:51] [1] [INFO] CARINA_CORE_VERSION: 1.2.9
+[2024-06-24 08:01:51] [1] [INFO] Test Started: verifyOpeningAboutPageFromLandingPage
+[2024-06-24 08:02:12] [1] [INFO] Test Passed: verifyOpeningAboutPageFromLandingPage
+[2024-06-24 08:02:12] [1] [INFO] INFO: '**************** Test execution summary ****************'.
+[2024-06-24 08:02:12] [1] [INFO] RESULT #1: TEST [Para_Bank_Framework - verifyOpeningAboutPageFromLandingPage] PASS [log=file://C:\Users\budaa\Desktop\project java\Para_Bank_Framework\reports\1719216110442/62d88146-4062-4b49-a98c-a376d67aca47/test.log]

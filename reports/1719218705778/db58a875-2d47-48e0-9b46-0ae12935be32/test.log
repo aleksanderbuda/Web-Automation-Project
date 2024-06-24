@@ -1,0 +1,42 @@
+[2024-06-24 08:47:04] [78] [WARN] Reporting disabled: using no op test run registrar
+[2024-06-24 08:47:04] [78] [INFO] TEST [Create account Page - verifyWhitespaceTrimmingForFirstName] STARTED at [10:47:04 2024-06-24]
+[2024-06-24 08:47:04] [78] [INFO] Starting driver session...
+[2024-06-24 08:47:04] [78] [INFO] Driver session started.
+[2024-06-24 08:47:04] [78] [INFO] INFO: opening url 'https://parabank.parasoft.com/'
+[2024-06-24 08:47:07] [78] [INFO] Element 'registerLinkButton' is clicked.
+[2024-06-24 08:47:23] [78] [WARN] Actual URL differs from expected one. Expected 'https://parabank.parasoft.com/' but found 'https://parabank.parasoft.com/parabank/register.htm'
+[2024-06-24 08:47:23] [78] [INFO] Keys '             user_ommykxb6               ' are sent to element 'firstNameField'.
+[2024-06-24 08:47:23] [78] [INFO] Keys 'user_l59vhngi' are sent to element 'lastNameField'.
+[2024-06-24 08:47:23] [78] [INFO] Keys '5752 Qqhicmxtwq St' are sent to element 'addressField'.
+[2024-06-24 08:47:23] [78] [INFO] Keys 'Jsmsiwv' are sent to element 'cityField'.
+[2024-06-24 08:47:23] [78] [INFO] Keys 'ZT' are sent to element 'stateField'.
+[2024-06-24 08:47:24] [78] [INFO] Keys '989410' are sent to element 'zipCodeField'.
+[2024-06-24 08:47:24] [78] [INFO] Keys '468-947-6691' are sent to element 'phoneField'.
+[2024-06-24 08:47:24] [78] [INFO] Keys '957-75-6440' are sent to element 'ssnField'.
+[2024-06-24 08:47:24] [78] [INFO] Keys 'user_mzwridav' are sent to element 'usernameField'.
+[2024-06-24 08:47:24] [78] [INFO] Keys 'wUkGUTYc4<' are sent to element 'passwordField'.
+[2024-06-24 08:47:24] [78] [INFO] Keys 'wUkGUTYc4<' are sent to element 'confirmPasswordField'.
+[2024-06-24 08:47:24] [78] [INFO] Element 'registerButton' is clicked.
+[2024-06-24 08:47:29] [78] [ERROR] TEST [Create account Page - verifyWhitespaceTrimmingForFirstName] FAILED at [10:47:29 2024-06-24] - The following asserts failed:
+	First name was not trimmed did not expect [             user_ommykxb6               ] but found [             user_ommykxb6               ],
+	First name is not correct expected [user_ommykxb6] but found [             user_ommykxb6               ]
+
+org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+para.bank.CreateAccountPageTest.verifyWhitespaceTrimmingForFirstName(CreateAccountPageTest.java:190)
+java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+java.base/java.lang.reflect.Method.invoke(Method.java:580)
+org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+java.base/java.lang.Thread.run(Thread.java:1570)

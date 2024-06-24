@@ -1,0 +1,85 @@
+[2024-06-24 08:45:05] [1] [INFO] 
+============= Basic configuration =============
+env=PROD
+=========== WebDriver configuration ===========
+browser=Chrome
+selenium_url=http://localhost:4444/wd/hub
+explicit_timeout=40
+auto_download=true
+locale=en_GB
+-------------- Driver capabilities ------------
+===============================================
+
+[2024-06-24 08:45:05] [1] [WARN] Reporting disabled: using no op test run registrar
+[2024-06-24 08:45:06] [1] [INFO] [TestNG] Running:
+  C:\Users\budaa\Desktop\project java\Para_Bank_Framework\src\test\resources\testngsuites\user_flow_happy_path.xml
+
+[2024-06-24 08:45:06] [1] [INFO] Use thread-count='5' from suite file.
+[2024-06-24 08:45:06] [1] [INFO] Use data-provider-thread-count='5' from suite file.
+[2024-06-24 08:45:06] [1] [INFO] CARINA_CORE_VERSION: 1.2.9
+[2024-06-24 08:45:06] [63] [INFO] Test Started: userSetsUpAdminPage
+[2024-06-24 08:46:11] [63] [INFO] Test Passed: userSetsUpAdminPage
+[2024-06-24 08:46:11] [69] [INFO] Test Started: verifyUserIsAbleToLogInWithValidAccount
+[2024-06-24 08:47:04] [69] [INFO] Test Passed: verifyUserIsAbleToLogInWithValidAccount
+[2024-06-24 08:47:04] [75] [INFO] Test Started: verifyRedirectToCreateAccountPageFromLanding
+[2024-06-24 08:47:04] [77] [INFO] Test Started: verifyRegistrationFieldsAreRequired
+[2024-06-24 08:47:04] [76] [INFO] Test Started: verifyUserRegisterAccount
+[2024-06-24 08:47:04] [78] [INFO] Test Started: verifyWhitespaceTrimmingForFirstName
+[2024-06-24 08:47:22] [75] [INFO] Test Passed: verifyRedirectToCreateAccountPageFromLanding
+[2024-06-24 08:47:29] [78] [INFO] Test Failed: verifyWhitespaceTrimmingForFirstName
+[2024-06-24 08:47:29] [78] [ERROR] Error Message: java.lang.AssertionError: The following asserts failed:
+	First name was not trimmed did not expect [             user_ommykxb6               ] but found [             user_ommykxb6               ],
+	First name is not correct expected [user_ommykxb6] but found [             user_ommykxb6               ]
+[2024-06-24 08:47:29] [78] [ERROR] TEST [Create account Page - verifyWhitespaceTrimmingForFirstName] FAILED at [10:47:29 2024-06-24] - Zebrunner didn't provide a selenium hub url.
+
+com.zebrunner.agent.core.webdriver.RemoteWebDriverFactory.lambda$getMandatorySeleniumHubUrl$0(RemoteWebDriverFactory.java:32)
+java.base/java.util.Optional.orElseThrow(Optional.java:403)
+com.zebrunner.agent.core.webdriver.RemoteWebDriverFactory.getMandatorySeleniumHubUrl(RemoteWebDriverFactory.java:32)
+com.zebrunner.agent.core.webdriver.RemoteWebDriverFactory.getDriver(RemoteWebDriverFactory.java:48)
+para.bank.listener.TestNGListener.onTestFailure(TestNGListener.java:29)
+org.testng.internal.TestListenerHelper.runTestListeners(TestListenerHelper.java:108)
+org.testng.internal.invokers.TestInvoker.runTestResultListener(TestInvoker.java:263)
+org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:751)
+org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+java.base/java.lang.Thread.run(Thread.java:1570)
+[2024-06-24 08:47:29] [78] [INFO] Test Failed: verifyWhitespaceTrimmingForFirstName
+[2024-06-24 08:47:29] [78] [ERROR] Error Message: java.lang.RuntimeException: Zebrunner didn't provide a selenium hub url.
+[2024-06-24 08:47:35] [77] [INFO] Test Failed: verifyRegistrationFieldsAreRequired
+[2024-06-24 08:47:35] [77] [ERROR] Error Message: java.lang.AssertionError: The following asserts failed:
+	ZipCode error message is present before clicking Create Account button expected [false] but found [true]
+[2024-06-24 08:47:35] [77] [ERROR] TEST [Create account Page - verifyRegistrationFieldsAreRequired] FAILED at [10:47:35 2024-06-24] - Zebrunner didn't provide a selenium hub url.
+
+com.zebrunner.agent.core.webdriver.RemoteWebDriverFactory.lambda$getMandatorySeleniumHubUrl$0(RemoteWebDriverFactory.java:32)
+java.base/java.util.Optional.orElseThrow(Optional.java:403)
+com.zebrunner.agent.core.webdriver.RemoteWebDriverFactory.getMandatorySeleniumHubUrl(RemoteWebDriverFactory.java:32)
+com.zebrunner.agent.core.webdriver.RemoteWebDriverFactory.getDriver(RemoteWebDriverFactory.java:48)
+para.bank.listener.TestNGListener.onTestFailure(TestNGListener.java:29)
+org.testng.internal.TestListenerHelper.runTestListeners(TestListenerHelper.java:108)
+org.testng.internal.invokers.TestInvoker.runTestResultListener(TestInvoker.java:263)
+org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:751)
+org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+java.base/java.lang.Thread.run(Thread.java:1570)
+[2024-06-24 08:47:35] [77] [INFO] Test Failed: verifyRegistrationFieldsAreRequired
+[2024-06-24 08:47:35] [77] [ERROR] Error Message: java.lang.RuntimeException: Zebrunner didn't provide a selenium hub url.
+[2024-06-24 08:47:39] [76] [INFO] Test Passed: verifyUserRegisterAccount
+[2024-06-24 08:54:33] [45] [WARN] Trying to quit driver 'default' on shutdown hook action!

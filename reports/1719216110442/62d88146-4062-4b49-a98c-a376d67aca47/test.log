@@ -1,0 +1,8 @@
+[2024-06-24 08:01:51] [1] [WARN] Reporting disabled: using no op test run registrar
+[2024-06-24 08:01:51] [1] [INFO] TEST [Para_Bank_Framework - verifyOpeningAboutPageFromLandingPage] STARTED at [10:01:51 2024-06-24]
+[2024-06-24 08:01:51] [1] [INFO] Starting driver session...
+[2024-06-24 08:01:52] [1] [INFO] Driver session started.
+[2024-06-24 08:01:52] [1] [INFO] INFO: opening url 'https://parabank.parasoft.com/'
+[2024-06-24 08:01:56] [1] [INFO] Element 'aboutLink' is clicked.
+[2024-06-24 08:02:11] [1] [WARN] Actual URL differs from expected one. Expected 'https://parabank.parasoft.com/' but found 'https://parabank.parasoft.com/parabank/about.htm'
+[2024-06-24 08:02:12] [1] [INFO] TEST [Para_Bank_Framework - verifyOpeningAboutPageFromLandingPage] PASSED at [10:02:12 2024-06-24]

@@ -1,0 +1,20 @@
+[2024-06-24 08:45:07] [63] [WARN] Reporting disabled: using no op test run registrar
+[2024-06-24 08:45:07] [63] [INFO] TEST [Admin Page - userSetsUpAdminPage] STARTED at [10:45:07 2024-06-24]
+[2024-06-24 08:45:07] [63] [INFO] Starting driver session...
+[2024-06-24 08:45:08] [63] [INFO] Driver session started.
+[2024-06-24 08:45:08] [63] [INFO] INFO: opening url 'https://parabank.parasoft.com/'
+[2024-06-24 08:45:11] [63] [INFO] Element 'openAdminPage' is clicked.
+[2024-06-24 08:45:26] [63] [WARN] Actual URL differs from expected one. Expected 'https://parabank.parasoft.com/' but found 'https://parabank.parasoft.com/parabank/admin.htm'
+[2024-06-24 08:45:26] [63] [INFO] Element 'cleanDatabaseBtn' is clicked.
+[2024-06-24 08:46:08] [63] [INFO] Element 'startupBtn' is clicked.
+[2024-06-24 08:46:09] [63] [INFO] Text '' typed
+[2024-06-24 08:46:09] [63] [INFO] Text '' typed
+[2024-06-24 08:46:09] [63] [INFO] Keys '50000' are sent to element 'initBalance'.
+[2024-06-24 08:46:09] [63] [INFO] Text '' typed
+[2024-06-24 08:46:09] [63] [INFO] Text '' typed
+[2024-06-24 08:46:10] [63] [INFO] Keys '100' are sent to element 'minBalance'.
+[2024-06-24 08:46:10] [63] [INFO] Text '' typed
+[2024-06-24 08:46:10] [63] [INFO] Text '' typed
+[2024-06-24 08:46:10] [63] [INFO] Keys '10' are sent to element 'thresholdField'.
+[2024-06-24 08:46:10] [63] [INFO] Element 'submitButton' is clicked.
+[2024-06-24 08:46:11] [63] [INFO] TEST [Admin Page - userSetsUpAdminPage] PASSED at [10:46:11 2024-06-24]
