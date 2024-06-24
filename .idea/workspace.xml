@@ -4,39 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e4598bdc-fe53-4810-9a7d-9c1326421c43" name="Changes" comment="gitignore update">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/start_docker.bat" beforeDir="false" afterPath="$PROJECT_DIR$/docker/start_docker.bat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/stop_docker.bat" beforeDir="false" afterPath="$PROJECT_DIR$/docker/stop_docker.bat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/1719216110442/62d88146-4062-4b49-a98c-a376d67aca47/report.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/1719216110442/62d88146-4062-4b49-a98c-a376d67aca47/test.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/1719216110442/emailable-report.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/1719216110442/test.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/1719218705778/03a0534e-5c99-4495-94bf-67387a9a3f15/1719218854978.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/1719218705778/03a0534e-5c99-4495-94bf-67387a9a3f15/report.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/1719218705778/03a0534e-5c99-4495-94bf-67387a9a3f15/test.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/1719218705778/1137b8a1-d1cf-4688-bae4-52bc393e90f8/report.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/1719218705778/1137b8a1-d1cf-4688-bae4-52bc393e90f8/test.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/1719218705778/1719218849313.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/1719218705778/1719218855298.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/1719218705778/47ca80c5-6c43-491b-a8b7-9d7fa0586a21/report.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/1719218705778/47ca80c5-6c43-491b-a8b7-9d7fa0586a21/test.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/1719218705778/b1ae0d10-9e22-4f27-9051-cda2116a182e/report.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/1719218705778/b1ae0d10-9e22-4f27-9051-cda2116a182e/test.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/1719218705778/db58a875-2d47-48e0-9b46-0ae12935be32/1719218848988.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/1719218705778/db58a875-2d47-48e0-9b46-0ae12935be32/report.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/1719218705778/db58a875-2d47-48e0-9b46-0ae12935be32/test.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/1719218705778/f7d9d3c5-ef4c-4f28-921d-e98f95bbb373/report.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/1719218705778/f7d9d3c5-ef4c-4f28-921d-e98f95bbb373/test.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/1719218705778/report.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/1719218705778/test.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/para/bank/config/ConfigLoader.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/para/bank/config/DockerSetup.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/_config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/_config.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/para/bank/AbstractParaBankPageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/para/bank/AbstractParaBankPageTest.java" afterDir="false" />
-    </list>
+    <list default="true" id="e4598bdc-fe53-4810-9a7d-9c1326421c43" name="Changes" comment="docker/jenkins update" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -206,7 +174,15 @@
       <option name="project" value="LOCAL" />
       <updated>1719221491117</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="docker/jenkins update">
+      <option name="closed" value="true" />
+      <created>1719236506040</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1719236506040</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -224,6 +200,7 @@
     <MESSAGE value="selenium server" />
     <MESSAGE value="chromedriver" />
     <MESSAGE value="gitignore update" />
-    <option name="LAST_COMMIT_MESSAGE" value="gitignore update" />
+    <MESSAGE value="docker/jenkins update" />
+    <option name="LAST_COMMIT_MESSAGE" value="docker/jenkins update" />
   </component>
 </project>

@@ -1,15 +1,6 @@
 pipeline {
     agent {label 'Windows'}
     stages {
-        stage('isRemote') {
-            steps {
-                script {
-                    config = readFile "src/main/java/config/configuration.properties"
-                    newConfig = config.replaceAll("isRemote=.*","isRemote=${isRemote}")
-                    writeFile file: "src/main/java/config/configuration.properties", text: "${newConfig}"
-                }
-            }
-        }
         stage('Run Tests') {
             steps {
                 script {
