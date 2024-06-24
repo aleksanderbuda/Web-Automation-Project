@@ -2,6 +2,14 @@
 <suite name="User flow happy path" skipfailedinvocationcounts="false" junit="false" parallel="methods"
        thread-count="5" data-provider-thread-count="5" annotations="JDK">
 
+    <parameter name="suiteOwner" value="abuda" />
+    <parameter name="jenkinsJobName" value="Happy_Path" />
+    <parameter name="jenkinsJobType" value="web"/>
+    <parameter name="jenkinsEnvironments" value="PROD" />
+    <parameter name="jenkinsRegressionPipeline" value="web_regression, full_regression"/>
+    <parameter name="jenkinsRegressionMatrix_full_regression" value="browser:chrome; browser:firefox"/>
+    <parameter name="jenkinsAutoScreenshot" value="true"/>
+
     <test name="Admin Page">
         <classes>
             <class name="para.bank.AdminPageTest">

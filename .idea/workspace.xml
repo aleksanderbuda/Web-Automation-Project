@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e4598bdc-fe53-4810-9a7d-9c1326421c43" name="Changes" comment="docker/jenkins update" />
+    <list default="true" id="e4598bdc-fe53-4810-9a7d-9c1326421c43" name="Changes" comment="docker/jenkins update">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/testngsuites/user_flow_happy_path.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/testngsuites/user_flow_happy_path.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -190,7 +193,15 @@
       <option name="project" value="LOCAL" />
       <updated>1719236834444</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="docker/jenkins update">
+      <option name="closed" value="true" />
+      <created>1719237386141</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1719237386141</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
