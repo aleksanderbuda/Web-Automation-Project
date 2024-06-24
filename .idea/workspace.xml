@@ -4,111 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e4598bdc-fe53-4810-9a7d-9c1326421c43" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/chromedriver.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reports/1719216110442/62d88146-4062-4b49-a98c-a376d67aca47/report.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reports/1719216110442/62d88146-4062-4b49-a98c-a376d67aca47/test.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reports/1719216110442/emailable-report.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reports/1719216110442/test.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reports/1719218705778/03a0534e-5c99-4495-94bf-67387a9a3f15/1719218854978.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reports/1719218705778/03a0534e-5c99-4495-94bf-67387a9a3f15/report.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reports/1719218705778/03a0534e-5c99-4495-94bf-67387a9a3f15/test.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reports/1719218705778/1137b8a1-d1cf-4688-bae4-52bc393e90f8/report.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reports/1719218705778/1137b8a1-d1cf-4688-bae4-52bc393e90f8/test.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reports/1719218705778/1719218849313.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reports/1719218705778/1719218855298.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reports/1719218705778/47ca80c5-6c43-491b-a8b7-9d7fa0586a21/report.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reports/1719218705778/47ca80c5-6c43-491b-a8b7-9d7fa0586a21/test.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reports/1719218705778/b1ae0d10-9e22-4f27-9051-cda2116a182e/report.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reports/1719218705778/b1ae0d10-9e22-4f27-9051-cda2116a182e/test.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reports/1719218705778/db58a875-2d47-48e0-9b46-0ae12935be32/1719218848988.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reports/1719218705778/db58a875-2d47-48e0-9b46-0ae12935be32/report.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reports/1719218705778/db58a875-2d47-48e0-9b46-0ae12935be32/test.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reports/1719218705778/f7d9d3c5-ef4c-4f28-921d-e98f95bbb373/report.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reports/1719218705778/f7d9d3c5-ef4c-4f28-921d-e98f95bbb373/test.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reports/1719218705778/report.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reports/1719218705778/test.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reports/gallery-lib/bg.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reports/gallery-lib/cucumber.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reports/gallery-lib/jquery-3.1.1.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reports/gallery-lib/jquery.photobox.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reports/gallery-lib/photobox.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reports/gallery-lib/styles.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reports/gallery-lib/thumbnail.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/selenium-server-4.19.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/para/bank/auth/CreateAccountPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/para/bank/components/BillPayForm.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/para/bank/components/CreateAccountForm.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/para/bank/components/MonthValues.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/para/bank/config/ConfigLoader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/para/bank/constants/Constants.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/para/bank/pages/AboutPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/para/bank/pages/AbstractParaBankPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/para/bank/pages/AccountActivityPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/para/bank/pages/AccountsOverviewPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/para/bank/pages/AdminPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/para/bank/pages/BillPayPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/para/bank/pages/FindTransactionsPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/para/bank/pages/LandingPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/para/bank/pages/OpenNewBankAccountPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/para/bank/pages/RequestLoanPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/para/bank/pages/TransactionDetailsPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/para/bank/pages/TransferFundsPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/para/bank/pages/UpdateContactInfoPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/para/bank/utils/NetworkUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/_config.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/para/bank/AbstractParaBankPageTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/para/bank/AdminPageTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/para/bank/BillPayPageTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/para/bank/CreateAccountPageTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/para/bank/FindTransactionsPageTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/para/bank/LandingPageTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/para/bank/OpenNewAccountPageTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/para/bank/RequestLoanPageTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/para/bank/TransferFundsPageTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/para/bank/listener/TestNGListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/META-INF/services/org.testng.ITestNGListener" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/testngsuites/_debug.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/testngsuites/user_flow_happy_path.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/git_toolbox_prj.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/Para_Bank_2024-04-03_14-05-40.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/Para_Bank_2024-04-03_14-06-02.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/Para_Bank_2024-04-03_14-08-48.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/Para_Bank_2024-04-03_14-15-52.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/Para_Bank_2024-04-03_14-18-23.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/Para_Bank_2024-04-03_14-22-45.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/Para_Bank_2024-04-03_14-25-40.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/Para_Bank_2024-04-03_14-26-21.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/Para_Bank_2024-04-08_11-15-28.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/Para_Bank_2024-04-08_11-34-25.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/AdminPageInitializer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/BillPayProcessor.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/FundsTransferService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/HomePageUserRegistration.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/LoanRequestService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/NewBankAccountOpener.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/TransactionFinder.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/UserLoginService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/UserSignupFormValidation.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/config/ConfigLoader.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/config/DockerSetup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/para/bank/config/DockerSetup.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/config/Drivers.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/config/FakeDataGenerator.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/config/Log.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/config/configuration.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/log4j2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/selenium-server-4.19.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/BaseTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ParaBankTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/WebpageScreenshotUtil.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testng.xml" beforeDir="false" />
-    </list>
+    <list default="true" id="e4598bdc-fe53-4810-9a7d-9c1326421c43" name="Changes" comment="chromedriver" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -168,6 +64,44 @@
       <option name="presentableId" value="Default" />
       <updated>1719220729512</updated>
     </task>
+    <task id="LOCAL-00001" summary="selenium server">
+      <option name="closed" value="true" />
+      <created>1719221129221</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1719221129221</updated>
+    </task>
+    <task id="LOCAL-00002" summary="chromedriver">
+      <option name="closed" value="true" />
+      <created>1719221185782</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1719221185782</updated>
+    </task>
+    <task id="LOCAL-00003" summary="chromedriver">
+      <option name="closed" value="true" />
+      <created>1719221247770</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1719221247770</updated>
+    </task>
+    <task id="LOCAL-00004" summary="chromedriver">
+      <option name="closed" value="true" />
+      <created>1719221275929</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1719221275929</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="selenium server" />
+    <MESSAGE value="chromedriver" />
+    <option name="LAST_COMMIT_MESSAGE" value="chromedriver" />
   </component>
 </project>
