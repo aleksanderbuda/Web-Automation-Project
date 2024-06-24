@@ -5,25 +5,55 @@ import com.zebrunner.carina.webdriver.core.capability.impl.desktop.ChromeCapabil
 import com.zebrunner.carina.webdriver.decorator.ExtendedWebElement;
 import org.apache.commons.lang3.RandomStringUtils;
 import org.apache.commons.lang3.StringUtils;
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.MutableCapabilities;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.logging.LogType;
 import org.openqa.selenium.logging.LoggingPreferences;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.testng.annotations.AfterSuite;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.BeforeTest;
 import para.bank.pages.AbstractParaBankPage;
 
+import java.io.File;
+import java.io.IOException;
 import java.time.Duration;
 import java.util.Map;
 import java.util.Random;
 import java.util.concurrent.atomic.AtomicInteger;
 import java.util.logging.Level;
+
+
 public class AbstractParaBankPageTest extends AbstractTest {
 
     protected static final Logger LOGGER = LoggerFactory.getLogger(AbstractParaBankPageTest.class);
 
+    @BeforeSuite
+    public void startDockerGrid() throws IOException, InterruptedException {
+        LOGGER.info("Starting Docker Grid...");
+        String[] startDocker = { "cmd", "/c", "start", "start_docker.bat" };
+        ProcessBuilder processBuilder = new ProcessBuilder(startDocker);
+        processBuilder.directory(new File("docker"));
+        processBuilder.start();
+
+        pause(15);
+
+        LOGGER.info("Docker Grid started.");
+    }
+
+    @AfterSuite
+    public void stopDockerGrid() throws IOException, InterruptedException {
+        LOGGER.info("Stopping Docker Grid...");
+        String[] startDocker = { "cmd", "/c", "start", "stop_docker.bat" };
+        ProcessBuilder processBuilder = new ProcessBuilder(startDocker);
+        processBuilder.directory(new File("docker"));
+        processBuilder.start();
+
+        pause(15);
+        LOGGER.info("Docker Grid stopped.");
+    }
 
     public long getBottomY(ExtendedWebElement element) {
         long elementTopPointY = element.getLocation().getY();

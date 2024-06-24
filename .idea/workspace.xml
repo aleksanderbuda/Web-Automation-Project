@@ -4,11 +4,50 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e4598bdc-fe53-4810-9a7d-9c1326421c43" name="Changes" comment="chromedriver" />
+    <list default="true" id="e4598bdc-fe53-4810-9a7d-9c1326421c43" name="Changes" comment="gitignore update">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/start_docker.bat" beforeDir="false" afterPath="$PROJECT_DIR$/docker/start_docker.bat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/stop_docker.bat" beforeDir="false" afterPath="$PROJECT_DIR$/docker/stop_docker.bat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/1719216110442/62d88146-4062-4b49-a98c-a376d67aca47/report.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/1719216110442/62d88146-4062-4b49-a98c-a376d67aca47/test.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/1719216110442/emailable-report.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/1719216110442/test.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/1719218705778/03a0534e-5c99-4495-94bf-67387a9a3f15/1719218854978.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/1719218705778/03a0534e-5c99-4495-94bf-67387a9a3f15/report.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/1719218705778/03a0534e-5c99-4495-94bf-67387a9a3f15/test.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/1719218705778/1137b8a1-d1cf-4688-bae4-52bc393e90f8/report.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/1719218705778/1137b8a1-d1cf-4688-bae4-52bc393e90f8/test.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/1719218705778/1719218849313.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/1719218705778/1719218855298.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/1719218705778/47ca80c5-6c43-491b-a8b7-9d7fa0586a21/report.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/1719218705778/47ca80c5-6c43-491b-a8b7-9d7fa0586a21/test.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/1719218705778/b1ae0d10-9e22-4f27-9051-cda2116a182e/report.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/1719218705778/b1ae0d10-9e22-4f27-9051-cda2116a182e/test.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/1719218705778/db58a875-2d47-48e0-9b46-0ae12935be32/1719218848988.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/1719218705778/db58a875-2d47-48e0-9b46-0ae12935be32/report.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/1719218705778/db58a875-2d47-48e0-9b46-0ae12935be32/test.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/1719218705778/f7d9d3c5-ef4c-4f28-921d-e98f95bbb373/report.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/1719218705778/f7d9d3c5-ef4c-4f28-921d-e98f95bbb373/test.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/1719218705778/report.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/1719218705778/test.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/para/bank/config/ConfigLoader.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/para/bank/config/DockerSetup.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/_config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/_config.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/para/bank/AbstractParaBankPageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/para/bank/AbstractParaBankPageTest.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -22,11 +61,14 @@
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="2" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "",
-  "associatedIndex": 1
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 1
+}</component>
   <component name="ProjectId" id="2iJtu3EmJ6zu1IeBvz71FMg0bTa" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -35,15 +77,75 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.CryptoConsole.executor": "Run",
+    "Batch.start_docker.executor": "Run",
+    "Batch.stop_docker.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/budaa/Desktop/project java/ParaBank Automation Project/src/main/resources",
     "project.structure.last.edited": "Global Libraries",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "reference.settings.ide.settings.notifications"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\budaa\Desktop\project java\ParaBank Automation Project\src\main\resources" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\budaa\Desktop\project java\ParaBank Automation Project\.idea" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Batch.start_docker">
+    <configuration name="CryptoConsole" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="com.zebrunner.carina.crypto.CryptoConsole" />
+      <module name="MainFramework" />
+      <option name="PROGRAM_PARAMETERS" value="-algorithm AES/ECB/PKCS5Padding -encrypt -key 99BqEfrLZL+I35n3hUnIKg== -string EncryptMe" />
+      <extension name="net.ashald.envfile">
+        <option name="IS_ENABLED" value="false" />
+        <option name="IS_SUBST" value="false" />
+        <option name="IS_PATH_MACRO_SUPPORTED" value="false" />
+        <option name="IS_IGNORE_MISSING_FILES" value="false" />
+        <option name="IS_ENABLE_EXPERIMENTAL_INTEGRATIONS" value="false" />
+        <ENTRIES>
+          <ENTRY IS_ENABLED="true" PARSER="runconfig" IS_EXECUTABLE="false" />
+        </ENTRIES>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="start_docker" type="BatchConfigurationType" factoryName="Batch" temporary="true">
+      <module name="MainFramework" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="WORKING_DIRECTORY" value="C:\Users\budaa\Desktop\project java\ParaBank Automation Project\docker" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SCRIPT_NAME" value="start_docker.bat" />
+      <option name="PARAMETERS" value="" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="stop_docker" type="BatchConfigurationType" factoryName="Batch" temporary="true">
+      <module name="MainFramework" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="WORKING_DIRECTORY" value="C:\Users\budaa\Desktop\project java\ParaBank Automation Project\docker" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SCRIPT_NAME" value="stop_docker.bat" />
+      <option name="PARAMETERS" value="" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Batch.start_docker" />
+        <item itemvalue="Batch.stop_docker" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -96,12 +198,32 @@
       <option name="project" value="LOCAL" />
       <updated>1719221275929</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="gitignore update">
+      <option name="closed" value="true" />
+      <created>1719221491117</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1719221491117</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="selenium server" />
     <MESSAGE value="chromedriver" />
-    <option name="LAST_COMMIT_MESSAGE" value="chromedriver" />
+    <MESSAGE value="gitignore update" />
+    <option name="LAST_COMMIT_MESSAGE" value="gitignore update" />
   </component>
 </project>

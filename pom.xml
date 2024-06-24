@@ -55,11 +55,6 @@
         </dependency>
         <dependency>
             <groupId>org.apache.logging.log4j</groupId>
-            <artifactId>log4j-api</artifactId>
-            <version>${log4j.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>org.apache.logging.log4j</groupId>
             <artifactId>log4j-core</artifactId>
             <version>${log4j.version}</version>
         </dependency>
@@ -104,12 +99,9 @@
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>${maven-surefire-plugin.version}</version>
                 <configuration>
-                    <forkMode>once</forkMode>
-                    <testFailureIgnore>true</testFailureIgnore>
-                    <forkCount>0</forkCount>
                     <useSystemClassLoader>false</useSystemClassLoader>
                     <suiteXmlFiles>
-                        <suiteXmlFile>testng.xml</suiteXmlFile>
+                        <suiteXmlFile>${project.build.directory}/test-classes/testngsuites/user_flow_happy_path.xml</suiteXmlFile>
                     </suiteXmlFiles>
                 </configuration>
             </plugin>
