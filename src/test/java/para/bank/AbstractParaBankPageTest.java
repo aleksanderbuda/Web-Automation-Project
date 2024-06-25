@@ -39,7 +39,6 @@ public class AbstractParaBankPageTest extends AbstractTest {
         processBuilder.start();
 
         pause(15);
-
         LOGGER.info("Docker Grid started.");
     }
 
