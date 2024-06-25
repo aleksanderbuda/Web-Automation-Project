@@ -1,0 +1,26 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Regression" skipfailedinvocationcounts="false" junit="false" parallel="methods"
+       thread-count="5" data-provider-thread-count="5" annotations="JDK">
+
+    <parameter name="suiteOwner" value="abuda" />
+    <parameter name="jenkinsJobName" value="Regression" />
+    <parameter name="jenkinsJobType" value="web"/>
+    <parameter name="jenkinsEnvironments" value="PROD" />
+    <parameter name="jenkinsRegressionPipeline" value="web_regression, full_regression"/>
+    <parameter name="jenkinsAutoScreenshot" value="true"/>
+
+    <test name="Regression">
+        <classes>
+
+            <class name="para.bank.AdminPageTest"/>
+            <class name="para.bank.CreateAccountPageTest"/>
+            <class name="para.bank.LandingPageTest"/>
+            <class name="para.bank.OpenNewAccountPageTest"/>
+            <class name="para.bank.TransferFundsPageTest"/>
+            <class name="para.bank.BillPayPageTest"/>
+            <class name="para.bank.FindTransactionsPageTest"/>
+            <class name="para.bank.RequestLoanPageTest">
+            </class>
+        </classes>
+    </test>
+</suite>

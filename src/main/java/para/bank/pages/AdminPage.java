@@ -55,7 +55,7 @@ public class AdminPage extends AbstractParaBankPage {
     }
 
     private static final String INITIAL_BALANCE = "50000";
-    private static final String MINIMAL_BALANCE = "100";
+    private static final String MINIMAL_BALANCE = "50";
     private static final String THRESHOLD = "10";
 
     @Override

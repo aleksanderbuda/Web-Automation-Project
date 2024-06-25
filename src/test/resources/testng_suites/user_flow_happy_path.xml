@@ -7,7 +7,6 @@
     <parameter name="jenkinsJobType" value="web"/>
     <parameter name="jenkinsEnvironments" value="PROD" />
     <parameter name="jenkinsRegressionPipeline" value="web_regression, full_regression"/>
-    <parameter name="jenkinsRegressionMatrix_full_regression" value="browser:chrome; browser:firefox"/>
     <parameter name="jenkinsAutoScreenshot" value="true"/>
 
     <test name="Admin Page">

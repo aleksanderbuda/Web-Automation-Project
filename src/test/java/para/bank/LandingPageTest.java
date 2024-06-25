@@ -13,7 +13,6 @@ import para.bank.constants.Constants;
 import para.bank.pages.AboutPage;
 import para.bank.pages.AccountsOverviewPage;
 import para.bank.pages.LandingPage;
-import para.bank.pages.OpenNewBankAccountPage;
 
 import java.time.Duration;
 
@@ -29,9 +28,9 @@ public class LandingPageTest extends AbstractParaBankPageTest {
         LandingPage landingPage = new LandingPage(driver);
         landingPage.open();
 
-        waitUntilElementStatic(landingPage, landingPage.getAboutLink(), Duration.ofSeconds(5));
+        waitUntilElementStatic(landingPage, landingPage.getOpenAboutPage(), Duration.ofSeconds(5));
         long pageContentHeight = landingPage.getContentPageHeight();
-        long aboutLinkPositionY = getBottomY(landingPage.getAboutLink());
+        long aboutLinkPositionY = getBottomY(landingPage.getOpenAboutPage());
         long actualDelta = pageContentHeight - aboutLinkPositionY;
         int expectedDelta = 220;
         softAssert.assertTrue(actualDelta < expectedDelta && actualDelta > 160,

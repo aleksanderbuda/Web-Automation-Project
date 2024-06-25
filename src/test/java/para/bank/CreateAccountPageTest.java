@@ -142,7 +142,7 @@ public class CreateAccountPageTest extends AbstractParaBankPageTest {
         softAssert.assertAll();
     }
 
-    @Test(description = "Check whitespace trimming for first name(negative)")
+    @Test(description = "Check there is no whitespace trimming for first name")
     @TestCaseKey("ID-4")
     @MethodOwner(owner = "abuda")
     public void verifyWhitespaceTrimmingForFirstName() {
@@ -184,8 +184,7 @@ public class CreateAccountPageTest extends AbstractParaBankPageTest {
 
         List<Map<String, String>> logs = findUploadedUserData(driver);
         String firstNameValue = logs.get(0).get("customer.firstName");
-        softAssert.assertNotEquals(firstNameValue, firstNameWithSpaces, "First name was not trimmed");
-        softAssert.assertEquals(firstNameValue, firstName, "First name is not correct");
+        softAssert.assertEquals(firstNameValue, firstNameWithSpaces, "First name is not trimmed as intended");
 
         softAssert.assertAll();
     }

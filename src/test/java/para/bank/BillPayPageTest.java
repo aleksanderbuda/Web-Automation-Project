@@ -69,7 +69,7 @@ public class BillPayPageTest extends AbstractParaBankPageTest {
         billPayPage.fillAmount(amount);
 
         billPayPage.clickSendPaymentButton();
-        softAssert.assertEquals(billPayPage.getTitleText(), Constants.PageTitles.BILL_PAYMENT_COMPLETE_PAGE_TITLE,
+        softAssert.assertEquals(billPayPage.getBillCompletedMessage(), Constants.PageTitles.BILL_PAYMENT_COMPLETE_PAGE_TITLE,
                 "After clicking 'Send Payment' button user has been redirected to the page with another title");
 
         billPayPage.openAccountsOverviewPage();

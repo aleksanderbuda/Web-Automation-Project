@@ -132,7 +132,7 @@
                 <configuration>
                     <useSystemClassLoader>false</useSystemClassLoader>
                     <suiteXmlFiles>
-                        <suiteXmlFile>${project.build.directory}/test-classes/testng_suites/user_flow_happy_path.xml</suiteXmlFile>
+                        <suiteXmlFile>${project.build.directory}/test-classes/testng_suites/regression.xml</suiteXmlFile>
                     </suiteXmlFiles>
                 </configuration>
             </plugin>

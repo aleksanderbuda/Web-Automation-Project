@@ -32,7 +32,7 @@ public class CreateAccountPage extends AbstractParaBankPage {
     private ExtendedWebElement welcomeMessage;
 
     @FindBy(xpath = "//a[@href='openaccount.htm']")
-    private ExtendedWebElement openNewAccountLinkButton;
+    private ExtendedWebElement openOpenNewAccountPage;
 
 
     @FindBy(xpath = "//a[@href='overview.htm']")
@@ -61,7 +61,7 @@ public class CreateAccountPage extends AbstractParaBankPage {
     }
 
     public OpenNewBankAccountPage openOpenNewAccountPage() {
-        openNewAccountLinkButton.click();
+        openOpenNewAccountPage.click();
         OpenNewBankAccountPage openNewBankAccountPage = new OpenNewBankAccountPage(getDriver());
         openNewBankAccountPage.isPageOpened(15);
         return openNewBankAccountPage;
@@ -223,9 +223,7 @@ public class CreateAccountPage extends AbstractParaBankPage {
             return createAccountForm.getStateFieldError().isElementPresent(1);
         }
 
-        public boolean isZipCodeErrorPresent() {
-            return createAccountForm.getZipCodeField().isElementPresent(1);
-        }
+        public boolean isZipCodeErrorPresent() { return createAccountForm.getZipcodeFieldError().isElementPresent(1);}
 
         public boolean isPhoneErrorPresent() {
             return createAccountForm.getPhoneFieldError().isElementPresent(1);

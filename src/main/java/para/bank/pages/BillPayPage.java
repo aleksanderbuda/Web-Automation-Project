@@ -18,6 +18,9 @@ public class BillPayPage extends AbstractParaBankPage {
     @FindBy(xpath = "//span[text()='Please enter a valid amount.']/following::input")
     private ExtendedWebElement submitButton;
 
+    @FindBy(xpath = "//h1[text()='Bill Payment Complete']")
+    private ExtendedWebElement billPaymentCompleted;
+
     BillPayPage(WebDriver driver) {
         super(driver, PageTitles.BILL_PAYMENT_PAGE_TITLE);
     }
@@ -30,6 +33,10 @@ public class BillPayPage extends AbstractParaBankPage {
     @Override
     public String getTitleText() {
         return getTitle();
+    }
+
+    public String getBillCompletedMessage() {
+       return billPaymentCompleted.getText();
     }
 
     public AccountsOverviewPage openAccountsOverviewPage(){

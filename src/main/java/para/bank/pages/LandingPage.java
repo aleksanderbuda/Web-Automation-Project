@@ -26,7 +26,7 @@ public class LandingPage extends AbstractParaBankPage {
 
     @Getter
     @FindBy(xpath = "(//a[@href='about.htm'])[3]")
-    private ExtendedWebElement aboutLink;
+    private ExtendedWebElement openAboutPage;
 
     @FindBy(xpath = "(//a[@href='admin.htm'])[2]")
     private ExtendedWebElement openAdminPage;
@@ -79,7 +79,7 @@ public class LandingPage extends AbstractParaBankPage {
     }
 
     public AboutPage openAboutPage() {
-        aboutLink.click();
+        openAboutPage.click();
         AboutPage aboutPage = new AboutPage(getDriver());
         aboutPage.isPageOpened(15);
         return aboutPage;

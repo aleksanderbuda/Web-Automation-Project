@@ -6,6 +6,15 @@
   <component name="ChangeListManager">
     <list default="true" id="e4598bdc-fe53-4810-9a7d-9c1326421c43" name="Changes" comment="docker/jenkins update">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/para/bank/auth/CreateAccountPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/para/bank/auth/CreateAccountPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/para/bank/pages/AdminPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/para/bank/pages/AdminPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/para/bank/pages/BillPayPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/para/bank/pages/BillPayPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/para/bank/pages/LandingPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/para/bank/pages/LandingPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/para/bank/BillPayPageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/para/bank/BillPayPageTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/para/bank/CreateAccountPageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/para/bank/CreateAccountPageTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/para/bank/LandingPageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/para/bank/LandingPageTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/testng_suites/user_flow_happy_path.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/testng_suites/user_flow_happy_path.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,30 +54,50 @@
     <option name="showMembers" value="true" />
     <option name="showVisibilityIcons" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.CryptoConsole.executor&quot;: &quot;Run&quot;,
-    &quot;Batch.start_docker.executor&quot;: &quot;Run&quot;,
-    &quot;Batch.stop_docker.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/budaa/Desktop/project java/ParaBank Automation Project/src/main/resources&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Global Libraries&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.ide.settings.notifications&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.CryptoConsole.executor": "Run",
+    "Batch.start_docker.executor": "Run",
+    "Batch.stop_docker.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "TestNG.AdminPageTest.userSetsUpAdminPage.executor": "Run",
+    "TestNG.BillPayPageTest.verifyUserIsAbleToPayBills.executor": "Run",
+    "TestNG.C:/Users/budaa/Desktop/project java/ParaBank Automation Project/src/test/resources/testng_suites/regression.xml.executor": "Run",
+    "TestNG.CreateAccountPageTest.verifyRedirectToCreateAccountPageFromLanding.executor": "Run",
+    "TestNG.CreateAccountPageTest.verifyRegistrationFieldsAreRequired.executor": "Run",
+    "TestNG.CreateAccountPageTest.verifyUserRegisterAccount.executor": "Debug",
+    "TestNG.CreateAccountPageTest.verifyWhitespaceTrimmingForFirstName.executor": "Run",
+    "TestNG.FindTransactionsPageTest.checkIfUserFindsTransactionByAmount.executor": "Run",
+    "TestNG.FindTransactionsPageTest.checkIfUserFindsTransactionByDate.executor": "Run",
+    "TestNG.FindTransactionsPageTest.checkIfUserFindsTransactionById.executor": "Run",
+    "TestNG.LandingPageTest.verifyOpeningAboutPageFromLandingPage.executor": "Run",
+    "TestNG.LandingPageTest.verifyUserIsAbleToLogInWithValidAccount.executor": "Run",
+    "TestNG.OpenNewAccountPageTest.verifyUserCanOpenCheckingAccount.executor": "Run",
+    "TestNG.OpenNewAccountPageTest.verifyUserCanOpenSavingsAccount.executor": "Run",
+    "TestNG.RequestLoanPageTest.verifyUserPaysLoanLessThanDownPaymentAllows.executor": "Run",
+    "TestNG.RequestLoanPageTest.verifyUserPaysMoreDownPaymentThanBalance.executor": "Run",
+    "TestNG.RequestLoanPageTest.verifyUserTakesALoan.executor": "Run",
+    "TestNG.TransferFundsPageTest.userChecksMonthForTransfer.executor": "Run",
+    "TestNG.TransferFundsPageTest.verifyUserCanTransferTheFundsBetweenAccounts.executor": "Run",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/budaa/Desktop/project java/ParaBank Automation Project/src/test/resources/testng_suites",
+    "project.structure.last.edited": "Global Libraries",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "reference.settings.ide.settings.notifications"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\budaa\Desktop\project java\ParaBank Automation Project\src\test\resources\testng_suites" />
       <recent name="C:\Users\budaa\Desktop\project java\ParaBank Automation Project\src\main\resources" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\budaa\Desktop\project java\ParaBank Automation Project\.idea" />
     </key>
   </component>
-  <component name="RunManager" selected="Batch.start_docker">
+  <component name="RunManager" selected="TestNG.BillPayPageTest.verifyUserIsAbleToPayBills">
     <configuration name="CryptoConsole" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="com.zebrunner.carina.crypto.CryptoConsole" />
       <module name="MainFramework" />
@@ -87,32 +116,95 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="start_docker" type="BatchConfigurationType" factoryName="Batch" temporary="true">
+    <configuration name="BillPayPageTest.verifyUserIsAbleToPayBills" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="MainFramework" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="WORKING_DIRECTORY" value="./docker" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SCRIPT_NAME" value="start_docker.bat" />
-      <option name="PARAMETERS" value="" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="para.bank.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="para.bank" />
+      <option name="MAIN_CLASS_NAME" value="para.bank.BillPayPageTest" />
+      <option name="METHOD_NAME" value="verifyUserIsAbleToPayBills" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="stop_docker" type="BatchConfigurationType" factoryName="Batch" temporary="true">
+    <configuration name="C:/Users/budaa/Desktop/project java/ParaBank Automation Project/src/test/resources/testng_suites/regression.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="MainFramework" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="WORKING_DIRECTORY" value="./docker" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SCRIPT_NAME" value="stop_docker.bat" />
-      <option name="PARAMETERS" value="" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/resources/testng_suites/regression.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RequestLoanPageTest.verifyUserTakesALoan" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="MainFramework" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="para.bank.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="para.bank" />
+      <option name="MAIN_CLASS_NAME" value="para.bank.RequestLoanPageTest" />
+      <option name="METHOD_NAME" value="verifyUserTakesALoan" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TransferFundsPageTest.userChecksMonthForTransfer" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="MainFramework" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="para.bank.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="para.bank" />
+      <option name="MAIN_CLASS_NAME" value="para.bank.TransferFundsPageTest" />
+      <option name="METHOD_NAME" value="userChecksMonthForTransfer" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TransferFundsPageTest.verifyUserCanTransferTheFundsBetweenAccounts" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="MainFramework" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="para.bank.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="para.bank" />
+      <option name="MAIN_CLASS_NAME" value="para.bank.TransferFundsPageTest" />
+      <option name="METHOD_NAME" value="verifyUserCanTransferTheFundsBetweenAccounts" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Batch.start_docker" />
-        <item itemvalue="Batch.stop_docker" />
+        <item itemvalue="TestNG.BillPayPageTest.verifyUserIsAbleToPayBills" />
+        <item itemvalue="TestNG.C:/Users/budaa/Desktop/project java/ParaBank Automation Project/src/test/resources/testng_suites/regression.xml" />
+        <item itemvalue="TestNG.TransferFundsPageTest.userChecksMonthForTransfer" />
+        <item itemvalue="TestNG.TransferFundsPageTest.verifyUserCanTransferTheFundsBetweenAccounts" />
+        <item itemvalue="TestNG.RequestLoanPageTest.verifyUserTakesALoan" />
       </list>
     </recent_temporary>
   </component>
@@ -208,7 +300,15 @@
       <option name="project" value="LOCAL" />
       <updated>1719238992041</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="docker/jenkins update">
+      <option name="closed" value="true" />
+      <created>1719240828653</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1719240828653</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
