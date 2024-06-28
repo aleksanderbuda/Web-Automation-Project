@@ -67,6 +67,7 @@ public class RequestLoanPage extends AbstractParaBankPage {
     public String getErrorMessage() {
         return errorMessage.getText();
     }
+
     public String getSuccessMessage() {
         return successMessage.getText();
     }

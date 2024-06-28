@@ -84,6 +84,5 @@ public class LandingPage extends AbstractParaBankPage {
         aboutPage.isPageOpened(15);
         return aboutPage;
     }
-
 }
 

@@ -4,7 +4,6 @@ import com.zebrunner.carina.webdriver.decorator.ExtendedWebElement;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.FindBy;
 
-
 public class FindTransactionsPage extends AbstractParaBankPage {
 
     @FindBy(xpath = "//a[@href='findtrans.htm']")
@@ -93,5 +92,4 @@ public class FindTransactionsPage extends AbstractParaBankPage {
     public void fillAmount(String amount) {
         findByAmount.type(amount);
     }
-
 }

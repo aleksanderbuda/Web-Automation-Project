@@ -49,7 +49,7 @@ public class UpdateContactInfoPage extends AbstractParaBankPage {
 
     @Override
     public boolean isPageOpened() {
-        return getTitleText().equals(PageTitles.UPDATE_PROFILE_PAGE_TITLE) && getCurrentUrl().contains(Urls.UPDATE_CONTACT_INFO_URL);
+        return getTitleText().equals(PageTitles.UPDATE_PROFILE_PAGE_TITLE) && getCurrentUrl().contains(Urls.UPDATE_PROFILE_INFO_URL);
     }
 
     public AccountsOverviewPage openAccountsOverviewPage() {

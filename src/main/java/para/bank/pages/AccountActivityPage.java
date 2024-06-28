@@ -78,7 +78,6 @@ public class AccountActivityPage extends AbstractParaBankPage {
         tableFirstTransaction.click();
     }
 
-
     public TransactionDetailsPage clickTableSecondTransaction(){
         tableSecondTransaction.click();
         TransactionDetailsPage transactionDetailsPage = new TransactionDetailsPage(getDriver());

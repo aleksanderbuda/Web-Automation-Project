@@ -24,7 +24,6 @@ import java.util.Random;
 import java.util.concurrent.atomic.AtomicInteger;
 import java.util.logging.Level;
 
-
 public class AbstractParaBankPageTest extends AbstractTest {
 
     protected static final Logger LOGGER = LoggerFactory.getLogger(AbstractParaBankPageTest.class);
@@ -89,42 +88,6 @@ public class AbstractParaBankPageTest extends AbstractTest {
                 RandomStringUtils.randomAlphabetic(1).toLowerCase() +
                 RandomStringUtils.randomNumeric(1);
         return pass + getRandomSpecialChar();
-    }
-
-    public String createRandomText(int charactersCount) {
-        StringBuilder stringBuilder = new StringBuilder();
-        Random random = new Random();
-        boolean isWordCapitalized = true;
-        while (charactersCount > 0) {
-            int wordSize = random.nextInt(8) + 1;
-            wordSize = charactersCount - wordSize < 0 ? charactersCount : wordSize;
-            charactersCount = charactersCount - wordSize;
-            String newWord = RandomStringUtils.randomAlphabetic(wordSize).toLowerCase();
-            if (isWordCapitalized) {
-                newWord = StringUtils.capitalize(newWord);
-            }
-            stringBuilder.append(newWord);
-            isWordCapitalized = false;
-            if (charactersCount > 1) {
-                if (charactersCount <= wordSize) {
-                    stringBuilder.append(RandomStringUtils.randomAlphabetic(charactersCount).toLowerCase());
-                    break;
-                } else {
-                    int rand = random.nextInt(5);
-                    if (rand == 0) {
-                        charactersCount = charactersCount - 1;
-                        stringBuilder.append(",");
-                    } else if (rand == 1) {
-                        charactersCount = charactersCount - 1;
-                        stringBuilder.append(".");
-                        isWordCapitalized = true;
-                    }
-                    charactersCount = charactersCount - 1;
-                    stringBuilder.append(" ");
-                }
-            }
-        }
-        return stringBuilder.toString();
     }
 
     public char getRandomSpecialChar() {

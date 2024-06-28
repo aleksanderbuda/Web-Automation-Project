@@ -40,10 +40,6 @@ public class NetworkUtils {
         return result;
     }
 
-    private static JsonPath getPostData(LogEntry logEntry) {
-        return JsonPath.from(JsonPath.from(logEntry.getMessage()).getString("message.params.request.postData"));
-    }
-
     private static String getPostDataAsString(LogEntry logEntry) {
         return JsonPath.from(logEntry.getMessage()).getString("message.params.request.postData");
     }

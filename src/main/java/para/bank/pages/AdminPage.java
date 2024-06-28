@@ -102,10 +102,6 @@ public class AdminPage extends AbstractParaBankPage {
         thresholdField.type(THRESHOLD);
     }
 
-    public void setLoanProcessor() {
-        loanProcessorField.click();
-    }
-
     public LandingPage openLandingPage() {
         homeBtn.click();
         LandingPage landingPage  = new LandingPage(getDriver());

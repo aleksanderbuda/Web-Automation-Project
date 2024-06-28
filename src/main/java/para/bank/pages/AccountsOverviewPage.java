@@ -124,13 +124,6 @@ public class AccountsOverviewPage extends AbstractParaBankPage {
         return requestLoanPage;
     }
 
-    public UpdateContactInfoPage openUpdateContactInfoPage(){
-        openUpdateContactInfoPage.click();
-        UpdateContactInfoPage updateContactInfoPage = new UpdateContactInfoPage(getDriver());
-        updateContactInfoPage.isPageOpened(15);
-        return updateContactInfoPage;
-    }
-
     public void clickLogOutButton() {
         LogOutButton.click();
     }

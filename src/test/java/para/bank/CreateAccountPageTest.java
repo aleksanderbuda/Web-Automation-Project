@@ -15,7 +15,6 @@ import para.bank.auth.CreateAccountPage;
 import para.bank.constants.Constants;
 import para.bank.pages.AccountsOverviewPage;
 import para.bank.pages.LandingPage;
-import para.bank.pages.OpenNewBankAccountPage;
 import para.bank.utils.NetworkUtils;
 
 import java.nio.charset.StandardCharsets;
@@ -25,7 +24,6 @@ import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
-
 
 public class CreateAccountPageTest extends AbstractParaBankPageTest {
 

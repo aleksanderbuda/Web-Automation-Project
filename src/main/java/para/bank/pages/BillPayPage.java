@@ -45,6 +45,7 @@ public class BillPayPage extends AbstractParaBankPage {
         openAccountsOverviewPage.isPageOpened(15);
         return openAccountsOverviewPage;
     }
+
     public String getAccountNumber() {
         return billPayForm.getFromAccountFirstNumber().getText();
     }
@@ -80,6 +81,7 @@ public class BillPayPage extends AbstractParaBankPage {
     public void accountNum(String num) {
         billPayForm.getBillAccountNumberField().type(num);
     }
+
     public void verifyAccountNum(String num) {
         billPayForm.getBillVerifyAccountNumberField().type(num);
     }

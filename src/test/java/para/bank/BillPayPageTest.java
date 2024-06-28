@@ -9,7 +9,6 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 import para.bank.auth.CreateAccountPage;
-import para.bank.components.BillPayForm;
 import para.bank.constants.Constants;
 import para.bank.pages.*;
 
@@ -95,6 +94,5 @@ public class BillPayPageTest extends AbstractParaBankPageTest {
                 "After opening 'Transaction Details' page amount sent is not correct");
 
         softAssert.assertAll();
-
     }
 }

@@ -131,6 +131,7 @@ public class CreateAccountPage extends AbstractParaBankPage {
         public void fillCity(String city) {
             createAccountForm.getCityField().type(city);
         }
+
         public void fillState(String state) {
             createAccountForm.getStateField().type(state);
         }

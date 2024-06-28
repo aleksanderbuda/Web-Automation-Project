@@ -72,6 +72,5 @@ public class OpenNewBankAccountPage extends AbstractParaBankPage {
         accountActivityPage.isPageOpened(15);
         return accountActivityPage;
     }
-
 }
 

@@ -11,13 +11,11 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 
 import java.time.Duration;
-
 @Slf4j
     public class AbstractParaBankPage extends AbstractPage implements Constants {
         private final String titleText;
 
     protected static final Logger LOGGER = LoggerFactory.getLogger(AbstractParaBankPage.class);
-
 
     public AbstractParaBankPage(WebDriver driver, String title) {
             super(driver);
@@ -34,11 +32,6 @@ import java.time.Duration;
         public boolean isPageOpened() {
         return this.titleText.equals(title.getText());
     }
-
-        public boolean waitUntilPageOpens(long timeoutInSec) {
-            log.info(String.format("Waiting in progress while page %s opens", titleText));
-            return waitUntil(d -> title.isElementPresent(Duration.ofSeconds(1)) && title.getText().equals(titleText), Duration.ofSeconds(timeoutInSec));
-        }
 
         public long getContentPageHeight() {
             JavascriptExecutor js = (JavascriptExecutor) getDriver();

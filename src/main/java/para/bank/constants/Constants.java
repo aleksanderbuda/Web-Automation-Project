@@ -34,7 +34,7 @@ public interface Constants {
 
             String TRANSACTION_DETAILS_URL = URL + "parabank/transaction.htm";
 
-            String UPDATE_CONTACT_INFO_URL = URL + "parabank/updateprofile.htm";
+            String UPDATE_PROFILE_INFO_URL = URL + "parabank/updateprofile.htm";
 
             String ABOUT_URL = URL + "parabank/about.htm";
         }
