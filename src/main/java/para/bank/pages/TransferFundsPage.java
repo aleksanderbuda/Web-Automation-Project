@@ -32,7 +32,7 @@ public class TransferFundsPage extends AbstractParaBankPage {
     @FindBy(xpath = "//h1[text()='Transfer Complete!']")
     private ExtendedWebElement transferCompleted;
 
-    TransferFundsPage(WebDriver driver) {
+    public TransferFundsPage(WebDriver driver) {
         super(driver, PageTitles.TRANSFER_FUNDS_PAGE_TITLE);
     }
 

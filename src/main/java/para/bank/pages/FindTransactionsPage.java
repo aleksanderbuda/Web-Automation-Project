@@ -51,7 +51,7 @@ public class FindTransactionsPage extends AbstractParaBankPage {
     @FindBy(xpath = "//a[@href='overview.htm']")
     private ExtendedWebElement accountOverviewButton;
 
-    FindTransactionsPage(WebDriver driver) {
+    public FindTransactionsPage(WebDriver driver) {
         super(driver, PageTitles.FIND_TRANSACTIONS_PAGE_TITLE);
     }
 

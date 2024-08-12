@@ -21,7 +21,7 @@ public class BillPayPage extends AbstractParaBankPage {
     @FindBy(xpath = "//h1[text()='Bill Payment Complete']")
     private ExtendedWebElement billPaymentCompleted;
 
-    BillPayPage(WebDriver driver) {
+    public BillPayPage(WebDriver driver) {
         super(driver, PageTitles.BILL_PAYMENT_PAGE_TITLE);
     }
 

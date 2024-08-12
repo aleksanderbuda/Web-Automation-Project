@@ -42,7 +42,7 @@ public class RequestLoanPage extends AbstractParaBankPage {
     @FindBy(xpath = "//div[@id='loanRequestApproved']//a[1]")
     private ExtendedWebElement newAccountNumber;
 
-    RequestLoanPage(WebDriver driver) {
+    public RequestLoanPage(WebDriver driver) {
         super(driver, Constants.PageTitles.ADMIN_PAGE_TITLE);
     }
 

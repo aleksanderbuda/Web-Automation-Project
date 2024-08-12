@@ -187,7 +187,7 @@ public class CreateAccountPageTest extends AbstractParaBankPageTest {
         softAssert.assertAll();
     }
 
-        private static List<Map<String, String>> findUploadedUserData (WebDriver driver){
+        public static List<Map<String, String>> findUploadedUserData(WebDriver driver){
             return NetworkUtils.findLogsByUrlAndMethod(driver, "/register.htm", "POST"::equals).stream()
                     .map(NetworkUtils::getBodyAsString)
                     .map(CreateAccountPageTest::getQueryParams)

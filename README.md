@@ -10,6 +10,7 @@ This project showcases a comprehensive Selenium-based test automation framework 
 * **Insightful Reporting**: Generates clear, interactive test reports with the _allure-reports_ library for data-driven analysis.
 * **CI/CD Ready**: Seamless integration into automated jobs, with adaptable configuration options.
 * **Easy Customization**: Offers a _config.properties file for simple tailoring of test behavior.
+* **Behavior-Driven Development**: Incorporates Cucumber to support BDD, allowing tests to be written in a more natural, readable format.
 ____
 ### Setup Checklist
 To ensure smooth execution of this Selenium project, please complete the following:
