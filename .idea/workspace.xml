@@ -4,24 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e4598bdc-fe53-4810-9a7d-9c1326421c43" name="Changes" comment="cucumber steps added">
+    <list default="true" id="e4598bdc-fe53-4810-9a7d-9c1326421c43" name="Changes" comment="cucumber steps refactor">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/para/bank/cucumber/steps/AdminPageStepDefinitions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/para/bank/cucumber/steps/AdminPageStepDefinitions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/para/bank/cucumber/steps/BillPayPageStepDefinitions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/para/bank/cucumber/steps/BillPayPageStepDefinitions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/para/bank/cucumber/steps/CreateAccountPageStepDefinitions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/para/bank/cucumber/steps/CreateAccountPageStepDefinitions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/para/bank/cucumber/steps/FindTransactionsStepDefinitions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/para/bank/cucumber/steps/FindTransactionsStepDefinitions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/para/bank/cucumber/steps/LandingPageStepDefinitions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/para/bank/cucumber/steps/LandingPageStepDefinitions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/para/bank/cucumber/steps/OpenNewAccountPageStepDefinitions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/para/bank/cucumber/steps/OpenNewAccountPageStepDefinitions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/para/bank/cucumber/steps/RequestLoanPageStepDefinition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/para/bank/cucumber/steps/RequestLoanPageStepDefinition.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/para/bank/cucumber/steps/TransferFundsPageStepDefinition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/para/bank/cucumber/steps/TransferFundsPageStepDefinition.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/admin_page_setup.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/admin_page_setup.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/bill_pay_page.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/bill_pay_page.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/create_account_page.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/create_account_page.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/find_transaction_page.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/find_transaction_page.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/landing_page.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/landing_page.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/open_new_account_page.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/open_new_account_page.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/request_loan_page.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/request_loan_page.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/transfer_funds_page.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/transfer_funds_page.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/para/bank/cucumber/CucumberTestRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/para/bank/cucumber/CucumberTestRunner.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -364,7 +349,15 @@
       <option name="project" value="LOCAL" />
       <updated>1723467822481</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="cucumber steps refactor">
+      <option name="closed" value="true" />
+      <created>1723546165618</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1723546165618</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -387,6 +380,7 @@
     <MESSAGE value="readme update" />
     <MESSAGE value="deleted redundancy" />
     <MESSAGE value="cucumber steps added" />
-    <option name="LAST_COMMIT_MESSAGE" value="cucumber steps added" />
+    <MESSAGE value="cucumber steps refactor" />
+    <option name="LAST_COMMIT_MESSAGE" value="cucumber steps refactor" />
   </component>
 </project>
