@@ -15,41 +15,41 @@ public class AdminPageStepDefinitions extends AbstractParaBankPageTest {
     LandingPage landingPage = new LandingPage(driver);
     SoftAssert softAssert = new SoftAssert();
 
-    @When("the user navigates to the admin page")
-    public void UserNavigatesToTheAdminPage() {
+    @When("I navigate to the admin page")
+    public void navigateToAdminPage() {
         landingPage.openAdminPage();
     }
 
-    @And("cleans the database")
-    public void cleansTheDatabase() {
+    @And("I clean the database")
+    public void cleanDatabase() {
         adminPage.cleanDatabase();
         waitUntilElementStatic(adminPage, adminPage.getTable(), Duration.ofSeconds(5));
     }
 
-    @And("sets the running status")
-    public void setsTheRunningStatus() {
+    @And("I set the running status")
+    public void setRunningStatus() {
         adminPage.setRunningStatus();
         waitUntilElementStatic(adminPage, adminPage.getTable(), Duration.ofSeconds(5));
     }
 
-    @And("sets the balance")
-    public void setsTheBalance() {
+    @And("I set the balance")
+    public void setBalance() {
         adminPage.setBalance();
     }
 
-    @And("sets the threshold")
-    public void setsTheTreshold() {
+    @And("I set the threshold")
+    public void setTreshold() {
         adminPage.setThreshold();
     }
 
-    @And("submits the changes")
-    public void submitsTheChanges() {
+    @And("I submit the changes")
+    public void submitChanges() {
         adminPage.clickSubmitButton();
         waitUntilElementStatic(adminPage, adminPage.getTable(), Duration.ofSeconds(5));
     }
 
-    @Then("the success message {string} should be displayed")
-    public void theSuccessMessageShouldBeDisplayed(String expectedMessage) {
+    @Then("I see the success message {string} should be displayed")
+    public void successMessageIsDisplayed(String expectedMessage) {
         softAssert.assertEquals(adminPage.getSuccessMessage(), expectedMessage,
                 "Changes for Admin Page were not saved");
         softAssert.assertAll();

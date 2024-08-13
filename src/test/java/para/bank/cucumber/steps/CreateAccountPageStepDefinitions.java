@@ -25,34 +25,30 @@ public class CreateAccountPageStepDefinitions extends AbstractParaBankPageTest {
     AccountsOverviewPage accountsOverviewPage = new AccountsOverviewPage(driver);
     LandingPage landingPage = new LandingPage(driver);
 
-    @Given("the user is on the landing page")
-    public void theUserIsOnLandingPage() {
-        landingPage.open();
-    }
 
-    @When("the user clicks the Register button")
-    public void theUserClicksTheButton() {
+    @When("I click the Register button")
+    public void clickRegisterButton() {
         CreateAccountPage createAccountPage = landingPage.clickRegisterAccountButton();
         Assert.assertTrue(createAccountPage.isPageOpened(),
                 "After clicking 'Register' button 'Create account' page is not opened");
     }
 
-    @Given("the user is on the Create Account Page")
-    public void theUserIsOnTheCreateAccountPage() {
-        CreateAccountPage createAccountPage = landingPage.clickRegisterAccountButton();
+    @Given("I am on Create Account Page")
+    public void verifyBeingOnCreateAccountPage() {
+        landingPage.clickRegisterAccountButton();
         String currentUrl = driver.getCurrentUrl();
         Assert.assertTrue(createAccountPage.isPageOpened(),
                 "After clicking 'Register' button on Landing page user has been redirected to page with another url" + currentUrl);
     }
 
-    @Then("the user should be redirected to the Create Account Page")
-    public void theUserShouldBeRedirectedToCreateAccountPage() {
+    @Then("I am redirected to the Create Account Page")
+    public void navigateToCreateAccountPage() {
         Assert.assertTrue(createAccountPage.isPageOpened(),
                 "After clicking 'Register' button on Landing page user has been redirected to a page with another URL");
     }
 
-    @When("the user fills in the registration form with valid details")
-    public void theUserFillsInTheRegistrationFormWithValidDetails() {
+    @When("I fill in the registration form with valid details")
+    public void fillInTheRegistrationFormWithValidDetails() {
         String firstName = createRandomUsername();
         String lastName = createRandomUsername();
         String address = createRandomAddress();
@@ -77,31 +73,35 @@ public class CreateAccountPageStepDefinitions extends AbstractParaBankPageTest {
         createAccountPage.fillConfirmPassword(password);
     }
 
-    @And("the user clicks the Create Account button")
-    public void theUserClicksTheCreateAccountButton() {
+    @And("I click Create Account button")
+    public void clickCreateAccountButton() {
         createAccountPage.clickCreateAccountBtn();
     }
 
-    @Then("the user should see a welcome message")
-    public void theUserShouldSeeAWelcomeMessage() {
+    @Then("I see a welcome message after registration")
+    public void verifyPresenceOfWelcomeMessage() {
         Assert.assertEquals(createAccountPage.getWelcomeMessage(), Constants.PageTitles.WELCOME_MESSAGE_TITLE,
                 "User did not see the expected welcome message");
     }
 
-    @Then("the user should be redirected to the Accounts Overview Page")
-    public void theUserShouldBeRedirectedToAccountsOverviewPage() {
+    @When("I click Accounts Overview button")
+    public void redirectToAccountsOverviewPage() {
         createAccountPage.openAccountsOverviewPage();
+    }
+
+    @Then("I see Accounts Overview page")
+    public void verifyPresenceOfAccountOverviewPage() {
         Assert.assertTrue(accountsOverviewPage.isPageOpened(),
                 "After registering an account 'Accounts Overview' page is not opened");
     }
 
-    @When("the user clicks the Create Account button without filling in the form")
-    public void theUserClicksTheCreateAccountButtonWithoutFillingInTheForm() {
+    @When("I click {string} button with empty form")
+    public void clickCreateAccountButtonWithoutFillingInTheForm() {
             createAccountPage.clickCreateAccountBtn();
     }
 
-    @Then("the user should see error messages for all required fields")
-    public void theUserShouldSeeErrorMessagesForAllRequiredFields() {
+    @Then("I see error messages for all required fields")
+    public void verifyErrorMessagesForAllRequiredFields() {
         Assert.assertTrue(createAccountPage.isFirstNameErrorPresent(), "First name error message is not present");
         Assert.assertTrue(createAccountPage.isLastNameErrorPresent(), "Last name error message is not present");
         Assert.assertTrue(createAccountPage.isAddressErrorPresent(), "Address error message is not present");
@@ -115,14 +115,35 @@ public class CreateAccountPageStepDefinitions extends AbstractParaBankPageTest {
         Assert.assertTrue(createAccountPage.isConfirmPasswordErrorPresent(), "Confirmation password error message is not present");
     }
 
-    @When("the user fills in the first name with leading and trailing spaces")
-    public void theUserFillsInTheFirstNameWithLeadingAndTrailingSpaces() {
-        String firstNameWithSpaces = "             " + createRandomUsername() + "               ";
+    @When("I fill in the correct form with first name having leading and trailing spaces")
+    public void fillInTheFirstNameWithLeadingAndTrailingSpaces() {
+        String firstName = createRandomUsername();
+        String firstNameWithSpaces = "             " + firstName + "               ";
+        String lastName = createRandomUsername();
+        String address = createRandomAddress();
+        String city = StringUtils.capitalize(RandomStringUtils.randomAlphabetic(7).toLowerCase());
+        String state = RandomStringUtils.randomAlphabetic(2).toUpperCase();
+        String zipCode = RandomStringUtils.randomNumeric(6);
+        String phone = createRandomPhoneNumber();
+        String ssn = createRandomSSN();
+        String username = createRandomUsername();
+        String password = createRandomStrongPassword();
+
         createAccountPage.fillName(firstNameWithSpaces);
+        createAccountPage.fillLastName(lastName);
+        createAccountPage.fillAddress(address);
+        createAccountPage.fillCity(city);
+        createAccountPage.fillState(state);
+        createAccountPage.fillZipCode(zipCode);
+        createAccountPage.fillPhoneNumber(phone);
+        createAccountPage.fillSecurityNum(ssn);
+        createAccountPage.fillUsername(username);
+        createAccountPage.fillPassword(password);
+        createAccountPage.fillConfirmPassword(password);
     }
 
-    @Then("the first name should be saved with leading and trailing spaces")
-    public void theFirstNameShouldBeSavedWithLeadingAndTrailingSpaces() {
+    @Then("I see confirmation that first name is saved with leading and trailing spaces")
+    public void verifySavingFirstNameWithLeadingAndTrailingSpaces() {
         String firstNameWithSpaces = "             " + createRandomUsername() + "               ";
         List<Map<String, String>> logs = findUploadedUserData(driver);
         String firstNameValue = logs.get(0).get("customer.firstName");

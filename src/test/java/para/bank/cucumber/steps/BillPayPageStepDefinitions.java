@@ -25,19 +25,13 @@ public class BillPayPageStepDefinitions extends AbstractParaBankPageTest {
     TransactionDetailsPage transactionDetailsPage = new TransactionDetailsPage(driver);
 
     String accountNumber;
-    String payeeName;
-    String address;
-    String phone;
-    String city;
-    String state;
-    String zipCode;
-    String accNumber;
     String amount;
+    String payeeName;
 
-    @Given("the user is on the landing page and registers a new account")
-    public void theUserIsOnLandingPageAndRegistersNewAccount() {
-        landingPage.open();
-        createAccountPage = landingPage.clickRegisterAccountButton();
+
+    @And("I navigate to Registration page")
+    public void navigateToRegistrationPage() {
+        landingPage.clickRegisterAccountButton();
         Assert.assertTrue(createAccountPage.isPageOpened(),
                 "After clicking 'Register' button 'Create account' page is not opened");
 
@@ -46,18 +40,24 @@ public class BillPayPageStepDefinitions extends AbstractParaBankPageTest {
                 "After Registering an account user has been redirected to the page with another title");
     }
 
-    @Given("the user navigates to the Accounts Overview page")
-    public void theUserNavigatesToAccountsOverviewPage() {
-        accountsOverviewPage = new AccountsOverviewPage(driver);
+    @And("I register new account")
+    public void registerNewAccount() {
+        createAccountPage.createAnAccount();
+        softAssert.assertEquals(createAccountPage.getWelcomeMessage(), Constants.PageTitles.WELCOME_MESSAGE_TITLE,
+                "After Registering an account user has been redirected to the page with another title");
+    }
+
+    @Given("I navigate to the Accounts Overview page")
+    public void navigateToAccountsOverviewPage() {
         accountsOverviewPage.clickAccountsOverviewButton();
         Assert.assertTrue(accountsOverviewPage.isPageOpened(),
                 "After opening 'Accounts Overview' page has not been redirected to 'Accounts Overview' page");
         accountNumber = accountsOverviewPage.getFirstAccountNumber();
     }
 
-    @When("the user navigates to the Bill Pay page")
-    public void theUserNavigatesToBillPayPage() {
-        billPayPage = accountsOverviewPage.openBillPayPage();
+    @When("I navigate to Bill Pay Page")
+    public void navigateToBillPayPage() {
+        accountsOverviewPage.openBillPayPage();
         Assert.assertTrue(billPayPage.isPageOpened(),
                 "After opening 'Bill Pay' page has not been redirected to 'Bill Pay' page");
         String fromAccountNumber = billPayPage.getAccountNumber();
@@ -65,8 +65,16 @@ public class BillPayPageStepDefinitions extends AbstractParaBankPageTest {
                 "Selected account is not the same as on the account on 'Account Overview' page");
     }
 
-    @And("the user fills in the Bill Pay details")
-    public void theUserFillsTheBillPayDetails() {
+    @And("I fill random Bill details")
+    public void fillsTheBillPayDetails() {
+        String address;
+        String phone;
+        String city;
+        String state;
+        String zipCode;
+        String accNumber;
+
+
         payeeName = createRandomUsername();
         address = createRandomAddress();
         phone = createRandomPhoneNumber();
@@ -87,37 +95,44 @@ public class BillPayPageStepDefinitions extends AbstractParaBankPageTest {
         billPayPage.fillAmount(amount);
     }
 
-    @And("the user submits the Bill Payment")
-    public void theUserSubmitsBillPayment() {
+    @And("I submit the Bill Payment")
+    public void submitBillPayment() {
         billPayPage.clickSendPaymentButton();
+    }
+
+    @And("I should see a bill payment confirmation message")
+    public void checkConfirmationMessage() {
         softAssert.assertEquals(billPayPage.getBillCompletedMessage(), Constants.PageTitles.BILL_PAYMENT_COMPLETE_PAGE_TITLE,
                 "After clicking 'Send Payment' button user has been redirected to the page with another title");
     }
 
-    @Then("the user verifies the transaction details")
-    public void theUserVerifiesTransactionDetails() {
+    @And("I navigate back to the Accounts Overview page")
+    public void goBackToAccOverview() {
         billPayPage.openAccountsOverviewPage();
         Assert.assertTrue(accountsOverviewPage.isPageOpened(),
                 "After opening 'Accounts Overview' page user has been redirected to the page with another title");
-
-        accountActivityPage = accountsOverviewPage.clickFirstAccountNumber();
-        softAssert.assertTrue(accountActivityPage.isTransactionTablePresent(),
-                "Transaction Table is not present");
-
-        waitUntilElementStatic(accountActivityPage, accountActivityPage.getTransactionTable(), Duration.ofSeconds(5));
-        accountActivityPage.clickTableFirstTransaction();
-        softAssert.assertEquals(accountActivityPage.getTitleText(), Constants.PageTitles.TRANSACTION_DETAILS_PAGE_TITLE,
-                "After opening 'Transaction Details' page user has been redirected to the page with another title");
-
-        transactionDetailsPage = new TransactionDetailsPage(driver);
-        String description = transactionDetailsPage.getDescription();
-        String transferredAmount = transactionDetailsPage.getTransferredAmount();
-
-        softAssert.assertEquals(description, "Bill Payment to " + payeeName,
-                "After opening 'Transaction Details' page Payee name is not correct");
-        softAssert.assertEquals(transferredAmount, "$" + amount + ",00",
-                "After opening 'Transaction Details' page amount sent is not correct");
-
-        softAssert.assertAll();
     }
-}
+        @Then("I verify the transaction details")
+        public void theUserVerifiesTransactionDetails() {
+            accountActivityPage = accountsOverviewPage.clickFirstAccountNumber();
+            softAssert.assertTrue(accountActivityPage.isTransactionTablePresent(),
+                    "Transaction Table is not present");
+
+            waitUntilElementStatic(accountActivityPage, accountActivityPage.getTransactionTable(), Duration.ofSeconds(5));
+            accountActivityPage.clickTableFirstTransaction();
+            softAssert.assertEquals(accountActivityPage.getTitleText(), Constants.PageTitles.TRANSACTION_DETAILS_PAGE_TITLE,
+                    "After opening 'Transaction Details' page user has been redirected to the page with another title");
+
+            transactionDetailsPage = new TransactionDetailsPage(driver);
+            String description = transactionDetailsPage.getDescription();
+            String transferredAmount = transactionDetailsPage.getTransferredAmount();
+
+            softAssert.assertEquals(description, "Bill Payment to " + payeeName,
+                    "After opening 'Transaction Details' page Payee name is not correct");
+            softAssert.assertEquals(transferredAmount, "$" + amount + ",00",
+                    "After opening 'Transaction Details' page amount sent is not correct");
+
+            softAssert.assertAll();
+        }
+    }
+

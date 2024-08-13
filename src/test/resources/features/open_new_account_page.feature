@@ -1,15 +1,18 @@
 Feature: Open New Account Page
 
   Scenario: Verify user can open 'Checking' type account
-    Given the user is on the Landing Page
-    When the user registers a new account with valid details
-    And the user opens a new checking account
-    Then the user should see a new checking account with the correct account number
-    And the account balance should be updated correctly
+    Given I am on the landing page
+    And I navigate to Registration page
+    And I register new account
+    And I open new bank account
+    When I open a checking account
+    Then I verify checking account is opened
 
   Scenario: Verify user can open 'Savings' type account
-    Given the user is on the Landing Page
-    When the user registers a new account with valid details
-    And the user opens a new savings account
-    Then the user should see a new savings account with the correct account number
-    And the account balance should be updated correctly
+    Given I am on the landing page
+    And I navigate to Registration page
+    And I register new account
+    And I open new bank account
+    When I open savings account
+    Then I verify savings account is opened
+

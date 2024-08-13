@@ -1,25 +1,30 @@
 Feature: Create Account Page
 
   Scenario: User is redirected to Create Account Page from Landing Page
-    Given the user is on the landing page
-    When the user clicks the Register button
-    Then the user should be redirected to the Create Account Page
+    Given I am on the landing page
+    And I click the Register button
+    Then I am redirected to the Create Account Page
 
   Scenario: User successfully registers an account
-    Given the user is on the Create Account Page
-    When the user fills in the registration form with valid details
-    And the user clicks the Create Account button
-    Then the user should see a welcome message
-    And the user should be redirected to the Accounts Overview Page
+    Given I am on the landing page
+    And I navigate to Registration page
+    And I register new account
+    When I fill in the registration form with valid details
+    And I click Create Account button
+    Then I see a welcome message after registration
+    When I click Accounts Overview button
+    Then I see Accounts Overview page
 
   Scenario: User receives error messages for required registration fields
-    Given the user is on the Create Account Page
-    When the user clicks the Create Account button without filling in the form
-    Then the user should see error messages for all required fields
+    Given I am on the landing page
+    And I navigate to Registration page
+    When I click "Create Account" button with empty form
+    Then I see error messages for all required fields
 
-  Scenario: User's first name is saved with leading and trailing spaces
-    Given the user is on the Create Account Page
-    When the user fills in the first name with leading and trailing spaces
-    And the user fills in the registration form with valid details
-    And the user clicks the Create Account button
-    Then the first name should be saved with leading and trailing spaces
+  Scenario: First name is saved with leading and trailing spaces during registration
+    Given I am on the landing page
+    And I click the Register button
+    Then I am redirected to the Create Account Page
+    When I fill in the correct form with first name having leading and trailing spaces
+    And I click Create Account button
+    Then I see confirmation that first name is saved with leading and trailing spaces

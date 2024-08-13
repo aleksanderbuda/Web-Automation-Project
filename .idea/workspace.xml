@@ -4,15 +4,24 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e4598bdc-fe53-4810-9a7d-9c1326421c43" name="Changes" comment="deleted redundancy">
+    <list default="true" id="e4598bdc-fe53-4810-9a7d-9c1326421c43" name="Changes" comment="cucumber steps added">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/para/bank/pages/BillPayPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/para/bank/pages/BillPayPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/para/bank/pages/FindTransactionsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/para/bank/pages/FindTransactionsPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/para/bank/pages/RequestLoanPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/para/bank/pages/RequestLoanPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/para/bank/pages/TransferFundsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/para/bank/pages/TransferFundsPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/para/bank/CreateAccountPageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/para/bank/CreateAccountPageTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/para/bank/cucumber/steps/AdminPageStepDefinitions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/para/bank/cucumber/steps/AdminPageStepDefinitions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/para/bank/cucumber/steps/BillPayPageStepDefinitions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/para/bank/cucumber/steps/BillPayPageStepDefinitions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/para/bank/cucumber/steps/CreateAccountPageStepDefinitions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/para/bank/cucumber/steps/CreateAccountPageStepDefinitions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/para/bank/cucumber/steps/FindTransactionsStepDefinitions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/para/bank/cucumber/steps/FindTransactionsStepDefinitions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/para/bank/cucumber/steps/LandingPageStepDefinitions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/para/bank/cucumber/steps/LandingPageStepDefinitions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/para/bank/cucumber/steps/OpenNewAccountPageStepDefinitions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/para/bank/cucumber/steps/OpenNewAccountPageStepDefinitions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/para/bank/cucumber/steps/RequestLoanPageStepDefinition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/para/bank/cucumber/steps/RequestLoanPageStepDefinition.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/para/bank/cucumber/steps/TransferFundsPageStepDefinition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/para/bank/cucumber/steps/TransferFundsPageStepDefinition.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/admin_page_setup.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/admin_page_setup.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/bill_pay_page.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/bill_pay_page.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/create_account_page.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/create_account_page.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/find_transaction_page.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/find_transaction_page.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/landing_page.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/landing_page.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/open_new_account_page.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/open_new_account_page.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/request_loan_page.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/request_loan_page.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/transfer_funds_page.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/transfer_funds_page.feature" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,41 +61,41 @@
     <option name="showMembers" value="true" />
     <option name="showVisibilityIcons" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.CryptoConsole.executor": "Run",
-    "Batch.start_docker.executor": "Run",
-    "Batch.stop_docker.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "TestNG.AdminPageTest.userSetsUpAdminPage.executor": "Run",
-    "TestNG.BillPayPageTest.verifyUserIsAbleToPayBills.executor": "Run",
-    "TestNG.C:/Users/budaa/Desktop/project java/ParaBank Automation Project/src/test/resources/testng_suites/regression.xml.executor": "Run",
-    "TestNG.CreateAccountPageTest.verifyRedirectToCreateAccountPageFromLanding.executor": "Run",
-    "TestNG.CreateAccountPageTest.verifyRegistrationFieldsAreRequired.executor": "Run",
-    "TestNG.CreateAccountPageTest.verifyUserRegisterAccount.executor": "Run",
-    "TestNG.CreateAccountPageTest.verifyWhitespaceTrimmingForFirstName.executor": "Run",
-    "TestNG.CucumberTestRunner.executor": "Run",
-    "TestNG.FindTransactionsPageTest.checkIfUserFindsTransactionByAmount.executor": "Run",
-    "TestNG.FindTransactionsPageTest.checkIfUserFindsTransactionByDate.executor": "Run",
-    "TestNG.FindTransactionsPageTest.checkIfUserFindsTransactionById.executor": "Run",
-    "TestNG.LandingPageTest.verifyOpeningAboutPageFromLandingPage.executor": "Run",
-    "TestNG.LandingPageTest.verifyUserIsAbleToLogInWithValidAccount.executor": "Run",
-    "TestNG.OpenNewAccountPageTest.verifyUserCanOpenCheckingAccount.executor": "Run",
-    "TestNG.OpenNewAccountPageTest.verifyUserCanOpenSavingsAccount.executor": "Run",
-    "TestNG.RequestLoanPageTest.verifyUserPaysLoanLessThanDownPaymentAllows.executor": "Run",
-    "TestNG.RequestLoanPageTest.verifyUserPaysMoreDownPaymentThanBalance.executor": "Run",
-    "TestNG.RequestLoanPageTest.verifyUserTakesALoan.executor": "Run",
-    "TestNG.TransferFundsPageTest.userChecksMonthForTransfer.executor": "Run",
-    "TestNG.TransferFundsPageTest.verifyUserCanTransferTheFundsBetweenAccounts.executor": "Run",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/budaa/Desktop/dot music qa copy",
-    "project.structure.last.edited": "Global Libraries",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "reference.settings.ide.settings.notifications"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.CryptoConsole.executor&quot;: &quot;Run&quot;,
+    &quot;Batch.start_docker.executor&quot;: &quot;Run&quot;,
+    &quot;Batch.stop_docker.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;TestNG.AdminPageTest.userSetsUpAdminPage.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.BillPayPageTest.verifyUserIsAbleToPayBills.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.C:/Users/budaa/Desktop/project java/ParaBank Automation Project/src/test/resources/testng_suites/regression.xml.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.CreateAccountPageTest.verifyRedirectToCreateAccountPageFromLanding.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.CreateAccountPageTest.verifyRegistrationFieldsAreRequired.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.CreateAccountPageTest.verifyUserRegisterAccount.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.CreateAccountPageTest.verifyWhitespaceTrimmingForFirstName.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.CucumberTestRunner.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.FindTransactionsPageTest.checkIfUserFindsTransactionByAmount.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.FindTransactionsPageTest.checkIfUserFindsTransactionByDate.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.FindTransactionsPageTest.checkIfUserFindsTransactionById.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.LandingPageTest.verifyOpeningAboutPageFromLandingPage.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.LandingPageTest.verifyUserIsAbleToLogInWithValidAccount.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.OpenNewAccountPageTest.verifyUserCanOpenCheckingAccount.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.OpenNewAccountPageTest.verifyUserCanOpenSavingsAccount.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.RequestLoanPageTest.verifyUserPaysLoanLessThanDownPaymentAllows.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.RequestLoanPageTest.verifyUserPaysMoreDownPaymentThanBalance.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.RequestLoanPageTest.verifyUserTakesALoan.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.TransferFundsPageTest.userChecksMonthForTransfer.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.TransferFundsPageTest.verifyUserCanTransferTheFundsBetweenAccounts.executor&quot;: &quot;Run&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/budaa/Desktop/dot music qa copy&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Global Libraries&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.ide.settings.notifications&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\budaa\Desktop\project java\ParaBank Automation Project\src\test\resources\testng_suites" />
@@ -347,7 +356,15 @@
       <option name="project" value="LOCAL" />
       <updated>1719578553822</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="cucumber steps added">
+      <option name="closed" value="true" />
+      <created>1723467822480</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1723467822481</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -369,6 +386,7 @@
     <MESSAGE value="code refactor" />
     <MESSAGE value="readme update" />
     <MESSAGE value="deleted redundancy" />
-    <option name="LAST_COMMIT_MESSAGE" value="deleted redundancy" />
+    <MESSAGE value="cucumber steps added" />
+    <option name="LAST_COMMIT_MESSAGE" value="cucumber steps added" />
   </component>
 </project>
